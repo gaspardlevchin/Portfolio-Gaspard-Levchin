@@ -25,15 +25,18 @@
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Retour en haut">
-        <span class="brand-mark">GL</span>
         <span class="brand-name">Gaspard Levchin</span>
       </a>
       <nav class="site-nav" aria-label="Navigation principale">
         <a href="#signature">Profil</a>
-        <a href="#projets">Projets</a>
+        <a href="#projets">Projet</a>
         <a href="#parcours">Parcours</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Changer le thème" data-theme-toggle>
+        <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
+      </button>
     </header>
 
     <main id="top">
@@ -52,12 +55,9 @@
           </p>
           <div class="hero-actions" aria-label="Actions principales">
             <a class="link-line" href="#projets">
-              <span></span>
-              Découvrir les projets
-            </a>
-            <a class="link-line link-line-soft" href="assets/portfolio-gaspard-levchin.pdf">
-              <span></span>
-              Version PDF
+              <span class="link-line-mark" aria-hidden="true"></span>
+              <span class="link-text">Découvrir les projets</span>
+              <span class="link-arrow" aria-hidden="true">→</span>
             </a>
           </div>
         </div>
@@ -126,16 +126,19 @@
           <article class="project-row project-featured">
             <div class="project-index">01</div>
             <div>
-              <p class="project-kicker">Création d'entreprise / Paris 5e</p>
+              <p class="project-kicker">Création d'entreprise / Paris</p>
               <h3>LEVCHIN, maison de design & mode</h3>
               <p>
                 Construction d'un univers de marque guidé par l'équilibre entre
-                forme, matière et intention. Recherche de lignes affirmées et de
-                pièces pensées avec exigence.
+                forme, matière et intention. Travail sur l'identité, le récit,
+                la présence digitale et la recherche de pièces à la croisée du
+                design, de la mode et de l'objet.
               </p>
-              <a href="https://hdlightcraft-tech.github.io/levchin-site/index.html" target="_blank" rel="noreferrer">
-                Voir le projet
-              </a>
+              <div class="project-actions">
+                <a href="https://hdlightcraft-tech.github.io/levchin-site/index.html" target="_blank" rel="noreferrer">
+                  Voir le projet
+                </a>
+              </div>
             </div>
             <img src="assets/levchin-logo.svg" alt="LEVCHIN" />
           </article>
@@ -145,7 +148,14 @@
             <div>
               <p class="project-kicker">Exposition photo / STAY ARTY</p>
               <h3>TVINTED DVRK</h3>
-              <p>Exposition photographique, agence STAY ARTY, Paris 20e.</p>
+              <p>
+                Projet photographique exposé à l'agence STAY ARTY, autour d'une
+                esthétique sombre, frontale et urbaine. Travail de sélection,
+                cohérence visuelle et présentation dans un contexte d'exposition.
+              </p>
+              <div class="project-actions">
+                <a href="projets/tvinted-dvrk.html">Détail projet</a>
+              </div>
             </div>
             <time>Mars / Avril 2024</time>
           </article>
@@ -155,9 +165,16 @@
             <div>
               <p class="project-kicker">Théâtre / Compagnie Les Larrons</p>
               <h3>L'Arche et le Château</h3>
-              <p>Création d'images pour un projet théâtre à Bezons et Paris 17e.</p>
+              <p>
+                Création d'images pour un projet théâtre, avec une attention
+                portée aux corps, aux présences et à la lecture de scène.
+                Adaptation du regard photo à un univers narratif et vivant.
+              </p>
+              <div class="project-actions">
+                <a href="projets/arche-chateau.html">Détail projet</a>
+              </div>
             </div>
-            <time>Fevrier 2024</time>
+            <time>Février 2024</time>
           </article>
 
           <article class="project-row">
@@ -165,7 +182,14 @@
             <div>
               <p class="project-kicker">Packshot commercial</p>
               <h3>Des Fermes, Un Quartier</h3>
-              <p>Photographie commerciale et packshot, Paris 20e.</p>
+              <p>
+                Réalisation de photographies commerciales et packshot pour des
+                produits alimentaires. Mise en valeur claire, lisible et fiable,
+                pensée pour un usage de communication et de vente.
+              </p>
+              <div class="project-actions">
+                <a href="projets/des-fermes-un-quartier.html">Détail projet</a>
+              </div>
             </div>
             <time>Mars 2024</time>
           </article>
@@ -175,7 +199,14 @@
             <div>
               <p class="project-kicker">Événementiel</p>
               <h3>Dîner du RCF</h3>
-              <p>Captation photographique événementielle à l'Aéroclub de France.</p>
+              <p>
+                Captation photographique événementielle à l'Aéroclub de France.
+                Travail de discrétion, réactivité et rendu élégant pour restituer
+                une atmosphère institutionnelle sans figer le moment.
+              </p>
+              <div class="project-actions">
+                <a href="projets/diner-rcf.html">Détail projet</a>
+              </div>
             </div>
             <time>Octobre 2023</time>
           </article>
@@ -185,7 +216,14 @@
             <div>
               <p class="project-kicker">Concert / Lyon</p>
               <h3>The Sausages</h3>
-              <p>Photographie de concert au Transbordeur.</p>
+              <p>
+                Photographie de concert au Transbordeur, dans un contexte de
+                lumière mouvante et d'énergie rapide. Recherche d'images qui
+                gardent la tension, le rythme et la présence de la scène.
+              </p>
+              <div class="project-actions">
+                <a href="projets/the-sausages.html">Détail projet</a>
+              </div>
             </div>
             <time>Juillet 2022</time>
           </article>
@@ -199,24 +237,41 @@
         </div>
         <div class="timeline">
           <article>
-            <time>Avril 2024 - aujourd'hui</time>
-            <h3>Création d'entreprise - design et mode</h3>
-            <p>Développement de la maison LEVCHIN, Paris 5e.</p>
+            <time>Avril 2024 — Aujourd’hui</time>
+            <h3>Création d’Entreprise — Design & Mode</h3>
+            <p>
+              Développement de la maison LEVCHIN — Paris. Construction d'un
+              territoire de marque — recherche de direction artistique — écriture
+              d'un univers visuel — préparation d'une première présence digitale.
+            </p>
           </article>
           <article>
-            <time>Octobre 2022 - 2024</time>
-            <h3>Vendeur polyvalent - Ideco Store</h3>
-            <p>Visual merchandising, relation client, gestion des stocks, Paris 10e.</p>
+            <time>Octobre 2022 — 2024</time>
+            <h3>Vendeur Polyvalent — Ideco Store</h3>
+            <p>
+              Expérience retail à Paris 10e — relation client — conseil — tenue de
+              l'espace de vente — visual merchandising — gestion des stocks.
+              Développement d'un sens concret du service — du détail — du rythme
+              d'une boutique.
+            </p>
           </article>
           <article>
             <time>Septembre 2023</time>
-            <h3>Commercial - Quycup & Blogo</h3>
-            <p>Maison & Objet, Villepinte.</p>
+            <h3>Commercial — Quycup & Blogo</h3>
+            <p>
+              Mission commerciale sur Maison & Objet — Villepinte. Présentation
+              de produits — échange avec des visiteurs professionnels — lecture
+              rapide des besoins dans un contexte salon exigeant.
+            </p>
           </article>
           <article>
-            <time>2020 - 2022</time>
-            <h3>BTS audiovisuel, spécialité image</h3>
-            <p>EFCAM, Riom.</p>
+            <time>2020 — 2022</time>
+            <h3>BTS Audiovisuel — Spécialité Image</h3>
+            <p>
+              Formation image à l'EFCAM — Riom. Culture de cadre — lumière —
+              photographie — matériel caméra — postproduction. Base technique
+              solide pour construire des images avec méthode.
+            </p>
           </article>
         </div>
       </section>
@@ -227,13 +282,14 @@
           <p>Outils</p>
         </div>
         <div class="craft-grid">
-          <div>
+          <div class="craft-copy">
             <h2>Culture visuelle.</h2>
-            <p>
-              Architecture: Bianca Censori, Zaha Hadid. Mode: YSL, Courrèges,
-              Balmain, Rick Owens. Design: modern, organic, art déco.
-              Photographie: Greig Fraser, David LaChapelle.
-            </p>
+            <div class="craft-notes">
+              <p><strong>Architecture</strong> Bianca Censori, Zaha Hadid.</p>
+              <p><strong>Mode</strong> YSL, Courrèges, Balmain, Rick Owens.</p>
+              <p><strong>Design</strong> modern, organic, art déco.</p>
+              <p><strong>Photographie</strong> Greig Fraser, David LaChapelle.</p>
+            </div>
           </div>
           <ul class="tool-list" aria-label="Competences">
             <li>Suite Adobe</li>
@@ -243,6 +299,22 @@
             <li>Wix</li>
             <li>Anglais C1</li>
           </ul>
+        </div>
+      </section>
+
+      <section class="section pdf-section" aria-labelledby="pdf-title">
+        <div class="section-label">
+          <span>06</span>
+          <p>PDF</p>
+        </div>
+        <div class="pdf-callout">
+          <p class="eyebrow">Version imprimable</p>
+          <h2 id="pdf-title">Voir la version PDF du portfolio.</h2>
+          <a class="link-line link-line-soft" href="assets/portfolio-gaspard-levchin.pdf" data-pdf-link>
+            <span class="link-line-mark" aria-hidden="true"></span>
+            <span class="link-text">Ouvrir le PDF</span>
+            <span class="link-arrow" aria-hidden="true">→</span>
+          </a>
         </div>
       </section>
 

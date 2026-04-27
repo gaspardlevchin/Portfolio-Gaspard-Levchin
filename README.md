@@ -1,14 +1,14 @@
 # Portfolio Gaspard Levchin
 
-Portfolio de Gaspard Levchin avec deux directions de travail.
+Site portfolio final de Gaspard Levchin, prêt pour GitHub Pages.
 
 ## Structure
 
-- `web/` et `pdf/` : version V1 par défaut, sombre, restaurée.
-- `V1/` : copie propre de la V1 sombre.
-- `V2/` : variante V1 en fond blanc légèrement écru avec texte noir.
-- `V3/` : site unique avec bascule de thème V1/V2 et PDF lié au thème actif.
-- `source/` : source CV conservée pour référence.
+- `index.html` : page principale du portfolio.
+- `styles.css` : direction artistique, responsive et thème jour/nuit.
+- `script.js` : bascule de thème et lien PDF dynamique.
+- `assets/` : images, logo et PDF.
+- `projets/` : pages projet détaillées.
 
 ## Mise en ligne GitHub Pages
 
@@ -17,9 +17,9 @@ Portfolio de Gaspard Levchin avec deux directions de travail.
 3. Dans GitHub, aller dans `Settings > Pages`.
 4. Choisir `Deploy from a branch`, branche `main`, dossier `/root`.
 
-## Points a enrichir ensemble
+## Points à enrichir ensemble
 
 - Ajouter une sélection d'images par projet.
-- Recuperer le contenu LinkedIn si tu peux exporter le profil ou copier les sections importantes.
+- Récupérer le contenu LinkedIn si tu peux exporter le profil ou copier les sections importantes.
 - Affiner les textes projet par projet.
 - Decider du nom de domaine final ou sous-domaine GitHub Pages.
