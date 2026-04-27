@@ -2,8 +2,18 @@ const header = document.querySelector(".site-header");
 const toggle = document.querySelector("[data-theme-toggle]");
 const pdfLink = document.querySelector("[data-pdf-link]");
 
+let headerTicking = false;
+
 const updateHeader = () => {
-  header.classList.toggle("is-scrolled", window.scrollY > 16);
+  header?.classList.toggle("is-scrolled", window.scrollY > 28);
+  headerTicking = false;
+};
+
+const requestHeaderUpdate = () => {
+  if (!headerTicking) {
+    window.requestAnimationFrame(updateHeader);
+    headerTicking = true;
+  }
 };
 
 const applyTheme = (theme) => {
@@ -34,4 +44,4 @@ toggle?.addEventListener("click", () => {
 });
 
 updateHeader();
-window.addEventListener("scroll", updateHeader, { passive: true });
+window.addEventListener("scroll", requestHeaderUpdate, { passive: true });
