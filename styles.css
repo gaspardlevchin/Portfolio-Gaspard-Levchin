@@ -280,54 +280,52 @@ h1 {
 .link-line {
   display: inline-flex;
   align-items: center;
-  gap: 15px;
+  gap: 16px;
   color: var(--ink);
   font-size: 0.76rem;
   font-weight: 700;
+  letter-spacing: 0.12em;
   line-height: 1;
   text-decoration: none;
-  transform: translate3d(0, 0, 0);
 }
 
 .link-line-mark {
   display: inline-block;
   width: 1px;
-  height: 72px;
-  background: linear-gradient(180deg, rgba(255, 243, 227, 0.04), rgba(255, 243, 227, 0.82));
-  transform: scaleY(0.75);
-  transform-origin: bottom;
-  transition: transform 420ms var(--ease-smooth), opacity 320ms var(--ease-smooth);
-  will-change: transform;
+  height: 62px;
+  background: linear-gradient(180deg, rgba(255, 243, 227, 0.06), rgba(255, 243, 227, 0.8));
+  transition: height 260ms ease, background 260ms ease;
 }
 
 .link-text,
 .link-arrow {
   display: inline-flex;
   align-items: center;
+  height: 1em;
   line-height: 1;
-  transition: transform 420ms var(--ease-smooth), opacity 320ms var(--ease-smooth), color 320ms var(--ease-smooth);
-  will-change: transform;
+  transition: transform 240ms ease, opacity 240ms ease, color 240ms ease;
 }
 
 .link-arrow {
   color: rgba(239, 230, 221, 0.82);
   font-size: 1.04rem;
-  transform: translate3d(0, 0.06em, 0);
 }
 
 .link-line:hover .link-line-mark,
 .link-line:focus-visible .link-line-mark {
-  transform: scaleY(1);
+  height: 82px;
+  background: linear-gradient(180deg, rgba(255, 243, 227, 0.16), rgba(255, 243, 227, 1));
 }
 
 .link-line:hover .link-text,
 .link-line:focus-visible .link-text {
-  transform: translate3d(0, -4px, 0);
+  color: #fff8ef;
 }
 
 .link-line:hover .link-arrow,
 .link-line:focus-visible .link-arrow {
-  transform: translate3d(7px, 0.06em, 0);
+  transform: translateX(6px);
+  color: #fff8ef;
 }
 
 .link-line-soft {
@@ -874,7 +872,19 @@ body[data-theme="light"] .hero-overlay {
 }
 
 body[data-theme="light"] .link-line-mark {
-  background: linear-gradient(180deg, rgba(5, 5, 5, 0.04), rgba(5, 5, 5, 0.82));
+  background: linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.8));
+}
+
+body[data-theme="light"] .link-line:hover .link-line-mark,
+body[data-theme="light"] .link-line:focus-visible .link-line-mark {
+  background: linear-gradient(180deg, rgba(5, 5, 5, 0.16), rgba(5, 5, 5, 1));
+}
+
+body[data-theme="light"] .link-line:hover .link-text,
+body[data-theme="light"] .link-line:focus-visible .link-text,
+body[data-theme="light"] .link-line:hover .link-arrow,
+body[data-theme="light"] .link-line:focus-visible .link-arrow {
+  color: #050505;
 }
 
 body[data-theme="light"] .link-arrow {
