@@ -82,55 +82,21 @@ a {
 .theme-icon {
   position: relative;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   flex: 0 0 auto;
+  background: currentColor;
+  -webkit-mask: var(--theme-icon) center / contain no-repeat;
+  mask: var(--theme-icon) center / contain no-repeat;
 }
 
 .theme-icon-sun {
-  width: 17px;
-  height: 17px;
-  border: 1.4px solid currentColor;
-  border-radius: 46% 54% 52% 48% / 50% 44% 56% 50%;
-}
-
-.theme-icon-sun::before,
-.theme-icon-sun::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 25px;
-  height: 1.2px;
-  border: 0;
-  border-radius: 999px;
-  background: currentColor;
-  transform: translate(-50%, -50%) rotate(28deg);
-  opacity: 0.7;
-}
-
-.theme-icon-sun::after {
-  width: 1.2px;
-  height: 25px;
-  transform: translate(-50%, -50%) rotate(28deg);
+  --theme-icon: url("assets/soleil.svg");
 }
 
 .theme-icon-moon {
+  --theme-icon: url("assets/lune.svg");
   display: none;
-  width: 19px;
-  height: 19px;
-  border-radius: 48% 52% 44% 56% / 58% 40% 60% 42%;
-  box-shadow: inset 5px -1px 0 0 currentColor;
-  transform: rotate(-20deg);
-}
-
-.theme-icon-moon::before {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  border: 1.2px solid currentColor;
-  border-radius: 48% 52% 45% 55% / 52% 46% 54% 48%;
-  opacity: 0.58;
 }
 
 .site-header.is-scrolled {
