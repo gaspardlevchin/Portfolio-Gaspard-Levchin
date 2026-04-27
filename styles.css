@@ -286,6 +286,7 @@ h1 {
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
+  transform: translate3d(0, 0, 0);
 }
 
 .link-line-mark {
@@ -321,12 +322,12 @@ h1 {
 
 .link-line:hover .link-text,
 .link-line:focus-visible .link-text {
-  transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -4px, 0);
 }
 
 .link-line:hover .link-arrow,
 .link-line:focus-visible .link-arrow {
-  transform: translate3d(5px, 0.06em, 0);
+  transform: translate3d(7px, 0.06em, 0);
 }
 
 .link-line-soft {
@@ -610,7 +611,7 @@ h1 {
   gap: 1px;
   margin: 0;
   padding: 0;
-  background: rgba(208, 159, 104, 0.18);
+  background: rgba(208, 159, 104, 0.14);
   list-style: none;
 }
 
@@ -618,8 +619,8 @@ h1 {
   min-height: 62px;
   padding: 21px 22px;
   background:
-    radial-gradient(circle at 15% -18%, rgba(208, 159, 104, 0.18), transparent 42%),
-    linear-gradient(135deg, rgba(30, 22, 17, 0.94), rgba(7, 6, 5, 0.98));
+    radial-gradient(ellipse at 18% -8%, rgba(208, 159, 104, 0.2), rgba(208, 159, 104, 0.08) 30%, transparent 58%),
+    #070707;
   color: rgba(239, 230, 221, 0.82);
   font-size: 0.78rem;
   font-weight: 700;
