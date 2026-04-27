@@ -325,29 +325,6 @@ h1 {
   color: rgba(239, 230, 221, 0.68);
 }
 
-.hero-meta {
-  position: absolute;
-  right: clamp(24px, 6vw, 104px);
-  top: 40%;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  gap: 0;
-  width: max-content;
-  transform: translateY(-50%) rotate(-90deg);
-  transform-origin: center;
-  writing-mode: horizontal-tb;
-}
-
-.hero-meta span {
-  color: rgba(239, 230, 221, 0.52);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
 .section {
   display: grid;
   grid-template-columns: var(--label-col) var(--section-content);
@@ -787,26 +764,6 @@ h1 {
     margin-left: 0;
   }
 
-  .hero-meta {
-    position: relative;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    z-index: 1;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 72px;
-    transform: none;
-    writing-mode: horizontal-tb;
-  }
-
-  .hero-meta span {
-    width: fit-content;
-    border-left: 0;
-    border-bottom: 0;
-    padding: 0;
-  }
-
   .section,
   .projects-section {
     grid-template-columns: 1fr;
@@ -860,7 +817,6 @@ body[data-theme="light"] .eyebrow,
 body[data-theme="light"] .hero-lead,
 body[data-theme="light"] .link-line::after,
 body[data-theme="light"] .link-line-soft,
-body[data-theme="light"] .hero-meta span,
 body[data-theme="light"] .section-label,
 body[data-theme="light"] .project-kicker,
 body[data-theme="light"] .project-row time,
