@@ -64,8 +64,8 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   border: 0;
   color: rgba(239, 230, 221, 0.9);
   background: transparent;
@@ -81,23 +81,14 @@ a {
 
 .theme-icon {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   flex: 0 0 auto;
-  color: currentColor;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 62.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 1.5;
+  object-fit: contain;
 }
 
 .theme-icon-moon {
   display: none;
-  fill: currentColor;
-  fill-rule: evenodd;
-  stroke: none;
 }
 
 .site-header.is-scrolled {
