@@ -67,7 +67,7 @@ a {
   width: 30px;
   height: 30px;
   border: 0;
-  color: var(--ink);
+  color: rgba(239, 230, 221, 0.9);
   background: transparent;
   cursor: pointer;
   padding: 0;
@@ -80,23 +80,24 @@ a {
 }
 
 .theme-icon {
-  position: relative;
-  display: inline-block;
-  width: 22px;
-  height: 22px;
+  display: block;
+  width: 24px;
+  height: 24px;
   flex: 0 0 auto;
-  background: currentColor;
-  -webkit-mask: var(--theme-icon) center / contain no-repeat;
-  mask: var(--theme-icon) center / contain no-repeat;
-}
-
-.theme-icon-sun {
-  --theme-icon: url("assets/soleil.svg");
+  color: currentColor;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 62.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 1.5;
 }
 
 .theme-icon-moon {
-  --theme-icon: url("assets/lune.svg");
   display: none;
+  fill: currentColor;
+  fill-rule: evenodd;
+  stroke: none;
 }
 
 .site-header.is-scrolled {
@@ -793,7 +794,7 @@ body[data-theme="light"] .theme-icon-sun {
 }
 
 body[data-theme="light"] .theme-icon-moon {
-  display: inline-block;
+  display: block;
 }
 
 body[data-theme="light"] .site-header.is-scrolled {
@@ -801,6 +802,7 @@ body[data-theme="light"] .site-header.is-scrolled {
 }
 
 body[data-theme="light"] .site-nav a,
+body[data-theme="light"] .theme-toggle,
 body[data-theme="light"] .eyebrow,
 body[data-theme="light"] .hero-lead,
 body[data-theme="light"] .link-line::after,
