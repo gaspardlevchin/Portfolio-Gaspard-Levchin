@@ -185,9 +185,9 @@ a {
 .hero {
   position: relative;
   display: grid;
-  min-height: 94svh;
+  min-height: 98svh;
   overflow: hidden;
-  padding: 132px var(--edge) 96px;
+  padding: 132px var(--edge) 108px;
 }
 
 .hero-media,
@@ -328,11 +328,11 @@ h1 {
 .hero-meta {
   position: absolute;
   right: clamp(24px, 6vw, 104px);
-  top: 46%;
+  top: 40%;
   z-index: 1;
   display: inline-flex;
   align-items: center;
-  gap: 20px;
+  gap: 0;
   width: max-content;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: center;
@@ -345,6 +345,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .section {
