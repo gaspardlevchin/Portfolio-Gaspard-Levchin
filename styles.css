@@ -101,10 +101,6 @@ a {
 }
 
 .language-switcher {
-  position: fixed;
-  right: var(--edge);
-  bottom: 26px;
-  z-index: 30;
   display: inline-flex;
   align-items: baseline;
   gap: 12px;
@@ -113,6 +109,15 @@ a {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: none;
+}
+
+.site-footer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -82px;
+  padding: 0 var(--edge) 30px;
 }
 
 .language-switcher span {
@@ -985,10 +990,13 @@ body[data-theme="light"] .project-featured img {
   }
 
   .language-switcher {
-    right: 20px;
-    bottom: 18px;
     gap: 10px;
     font-size: 0.62rem;
+  }
+
+  .site-footer {
+    margin-top: -64px;
+    padding: 0 20px 24px;
   }
 
   h1 {
