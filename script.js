@@ -131,13 +131,109 @@ const translations = {
     "project.sausages.card1.title": "Live image",
     "project.sausages.card1.body": "Composing quickly with light, movement and the constraints of a concert.",
     "project.sausages.card2.title": "Intention",
-    "project.sausages.card2.body": "Preserving the energy of the moment without losing image legibility."
+    "project.sausages.card2.body": "Preserving the energy of the moment without losing image legibility.",
+    "project.meta.context": "Context",
+    "project.meta.role": "Role",
+    "project.meta.output": "Output",
+    "project.section.intent": "Intent",
+    "project.section.gallery": "Visual sequence",
+    "project.tvinted.meta.context": "STAY ARTY, Paris",
+    "project.tvinted.meta.role": "Photography, selection and exhibition rhythm",
+    "project.tvinted.meta.output": "Exhibited series and communication materials",
+    "project.tvinted.intent.title": "A nocturnal, frontal urban language.",
+    "project.tvinted.intent.body1": "TVINTED DVRK works like a cold, mineral sequence. The images lean into glass, concrete, reflection and urban verticality to create a tense visual field between architecture and inner landscape.",
+    "project.tvinted.intent.body2": "The page keeps that atmosphere: darker surfaces, cooler halos and a tighter editorial rhythm, while preserving the portfolio’s overall precision and restraint.",
+    "project.tvinted.caption.hero": "Exhibition communication material, designed as a visual threshold.",
+    "project.tvinted.caption.block": "Vertical architecture, cold rhythm and illuminated fragments.",
+    "project.tvinted.caption.line": "Lines, density and urban repetition.",
+    "project.tvinted.caption.edge": "Edge effects, reflection and nocturnal tension.",
+    "project.tvinted.caption.known": "A broader reading of the city as a graphic surface.",
+    "project.tvinted.caption.story": "Story format used to extend the exhibition identity.",
+    "project.tvinted.alt.hero": "TVINTED DVRK exhibition banner",
+    "project.tvinted.alt.block": "Nocturnal architectural facade with illuminated windows",
+    "project.tvinted.alt.line": "Urban architectural lines at night",
+    "project.tvinted.alt.edge": "Dark facade detail with blue reflections",
+    "project.tvinted.alt.known": "Urban architecture photographed at night",
+    "project.tvinted.alt.story": "TVINTED DVRK vertical exhibition story",
+    "project.arche.meta.context": "Compagnie Les Larrons",
+    "project.arche.meta.role": "Stage photography and narrative image",
+    "project.arche.meta.output": "Communication images and visual memory",
+    "project.arche.intent.title": "A living scene, between gesture and silence.",
+    "project.arche.intent.body1": "For L'Arche et le Château, the work is less about documenting a performance than catching the density of a presence: the gesture before it becomes action, the gaze before it becomes text, the object before it becomes a symbol.",
+    "project.arche.intent.body2": "The page borrows from theatre codes through deeper blacks, a muted red accent and a rhythm that alternates stage-wide breathing space with close, human detail.",
+    "project.arche.caption.hero": "Red curtain as a threshold into the theatrical world.",
+    "project.arche.caption.portrait": "Character, object and stage presence in a single frame.",
+    "project.arche.caption.scene": "Objects and light as narrative clues.",
+    "project.arche.caption.geste": "Gesture caught before the scene fully unfolds.",
+    "project.arche.caption.duo": "Relationship, distance and stage tension.",
+    "project.arche.caption.silence": "A quiet detail that lets the set breathe.",
+    "project.arche.alt.hero": "Closed red theatre curtain",
+    "project.arche.alt.portrait": "Actor holding a teddy bear on stage",
+    "project.arche.alt.scene": "Stage object lit against a dark background",
+    "project.arche.alt.geste": "Theatre scene with actors in motion",
+    "project.arche.alt.duo": "Two actors on stage",
+    "project.arche.alt.silence": "Minimal stage detail with warm light",
+    "project.packshot.meta.context": "Local food retail",
+    "project.packshot.meta.role": "Product photography and commercial images",
+    "project.packshot.meta.output": "Readable visuals for sales and communication",
+    "project.packshot.intent.title": "Simple, honest and directly useful images.",
+    "project.packshot.intent.body1": "Des Fermes, Un Quartier required a clear visual language: products, labels, shelves and materials had to remain immediately understandable while still feeling warm and desirable.",
+    "project.packshot.intent.body2": "The page uses a more grounded palette, warmer panels and a steady grid to echo proximity, food, wood, handwritten labels and the practical clarity of a neighborhood shop.",
+    "project.packshot.caption.hero": "Shelf rhythm, labels and product readability.",
+    "project.packshot.caption.rue": "A market-stall signal inside the store.",
+    "project.packshot.caption.vitrine": "Produce, signage and direct visual information.",
+    "project.packshot.caption.produits": "Commercial framing for shelf and product identity.",
+    "project.packshot.caption.detail": "Texture, material and retail proximity.",
+    "project.packshot.caption.lineaire": "A wider reading of the product display.",
+    "project.packshot.alt.hero": "Wine bottles displayed on a wooden shelf",
+    "project.packshot.alt.rue": "Rue des Primeurs sign",
+    "project.packshot.alt.vitrine": "Fruit and vegetable display in a shop",
+    "project.packshot.alt.produits": "Food products arranged on shelves",
+    "project.packshot.alt.detail": "Retail product detail",
+    "project.packshot.alt.lineaire": "Wide product shelf in a food shop",
+    "project.rcf.meta.context": "Aero-Club de France",
+    "project.rcf.meta.role": "Event coverage and live image selection",
+    "project.rcf.meta.output": "Institutional images for memory and communication",
+    "project.rcf.intent.title": "Discretion, clarity and institutional atmosphere.",
+    "project.rcf.intent.body1": "The RCF dinner called for a photographic approach that stays elegant and unobtrusive: readable group moments, public speaking, room atmosphere and interactions captured without interrupting the event.",
+    "project.rcf.intent.body2": "The page follows that balance with a cooler, more formal tone, subtle lavender light and a layout that alternates wide context with more human, punctual moments.",
+    "project.rcf.caption.hero": "Speech moment and collective attention.",
+    "project.rcf.caption.salle": "Room scale, institutional rhythm and audience.",
+    "project.rcf.caption.groupe": "Group image, formal memory and recognition.",
+    "project.rcf.caption.table": "Table detail and event atmosphere.",
+    "project.rcf.caption.interaction": "A live exchange, captured without staging.",
+    "project.rcf.caption.portrait": "Vertical moment, gesture and presence.",
+    "project.rcf.alt.hero": "Speaker addressing guests during the RCF dinner",
+    "project.rcf.alt.salle": "Wide view of the RCF dinner room",
+    "project.rcf.alt.groupe": "Group photo during the RCF dinner",
+    "project.rcf.alt.table": "Dinner table detail",
+    "project.rcf.alt.interaction": "Guests interacting during the event",
+    "project.rcf.alt.portrait": "Vertical event photograph",
+    "project.sausages.meta.context": "Le Transbordeur, Lyon",
+    "project.sausages.meta.role": "Live photography and atmosphere capture",
+    "project.sausages.meta.output": "Concert images, stage energy and crowd fragments",
+    "project.sausages.intent.title": "Movement, light and live tension.",
+    "project.sausages.intent.body1": "The Sausages series works with unstable light, fast gestures and a crowd rhythm that cannot be repeated. The goal is to preserve the energy without losing composition.",
+    "project.sausages.intent.body2": "The page keeps the portfolio structure but lets the series breathe through cooler greens, sharper contrast and more dynamic image blocks.",
+    "project.sausages.caption.hero": "Gesture, decks and live light in motion.",
+    "project.sausages.caption.backstage": "Backstage pause before the next impulse.",
+    "project.sausages.caption.crowd": "Crowd fragment and daylight spill.",
+    "project.sausages.caption.stage": "Stage atmosphere and spatial tension.",
+    "project.sausages.caption.live": "Performance detail, speed and concentration.",
+    "project.sausages.caption.energy": "Energy, bodies and live rhythm.",
+    "project.sausages.alt.hero": "DJ performing at Le Transbordeur",
+    "project.sausages.alt.backstage": "Two performers near DJ equipment",
+    "project.sausages.alt.crowd": "Concert crowd portrait",
+    "project.sausages.alt.stage": "Stage and live concert atmosphere",
+    "project.sausages.alt.live": "Performer captured during a concert",
+    "project.sausages.alt.energy": "Concert energy and movement"
   }
 };
 
 const originalTranslations = new Map();
 const originalContent = new Map();
 const originalAriaLabels = new Map();
+const originalAltText = new Map();
 
 let headerTicking = false;
 
@@ -207,6 +303,16 @@ const applyLanguage = (language) => {
     element.setAttribute(
       "aria-label",
       getTranslation(element.dataset.i18nAriaLabel, nextLanguage, originalAriaLabels.get(element))
+    );
+  });
+
+  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+    if (!originalAltText.has(element)) {
+      originalAltText.set(element, element.getAttribute("alt") || "");
+    }
+    element.setAttribute(
+      "alt",
+      getTranslation(element.dataset.i18nAlt, nextLanguage, originalAltText.get(element))
     );
   });
 

@@ -763,6 +763,203 @@ h1 {
   line-height: 1.8;
 }
 
+.project-story {
+  --project-accent: var(--warm);
+  --project-glow: rgba(208, 159, 104, 0.18);
+  --project-panel: rgba(11, 10, 9, 0.74);
+}
+
+.project-tvinted {
+  --project-accent: #7899a9;
+  --project-glow: rgba(61, 96, 119, 0.28);
+}
+
+.project-rcf {
+  --project-accent: #b9acd8;
+  --project-glow: rgba(153, 136, 203, 0.24);
+}
+
+.project-sausages {
+  --project-accent: #75b49e;
+  --project-glow: rgba(62, 151, 122, 0.24);
+}
+
+.project-fermes {
+  --project-accent: #c2a56c;
+  --project-glow: rgba(165, 135, 78, 0.22);
+}
+
+.project-arche {
+  --project-accent: #b4473c;
+  --project-glow: rgba(180, 55, 43, 0.24);
+}
+
+.project-story .project-page-shell {
+  row-gap: 0;
+}
+
+.project-visual-hero {
+  position: relative;
+  margin: 46px 0 34px;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 243, 227, 0.12);
+  border-bottom: 1px solid rgba(255, 243, 227, 0.12);
+  background:
+    radial-gradient(circle at 18% 0%, var(--project-glow), transparent 34%),
+    #070707;
+}
+
+.project-visual-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 58%, rgba(5, 5, 5, 0.36));
+  pointer-events: none;
+}
+
+.project-visual-hero img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.project-visual-hero figcaption,
+.project-figure figcaption {
+  color: rgba(239, 230, 221, 0.56);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
+.project-visual-hero figcaption {
+  position: absolute;
+  right: clamp(18px, 3vw, 32px);
+  bottom: clamp(18px, 3vw, 28px);
+  z-index: 1;
+  max-width: 34ch;
+  text-align: right;
+}
+
+.project-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0 0 58px;
+  background: rgba(255, 243, 227, 0.1);
+}
+
+.project-meta div {
+  min-height: 132px;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 18% -10%, var(--project-glow), transparent 48%),
+    var(--project-panel);
+}
+
+.project-meta p {
+  margin-bottom: 22px;
+  color: var(--project-accent);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.project-meta strong {
+  display: block;
+  color: rgba(239, 230, 221, 0.84);
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.project-statement {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+  margin: 78px 0;
+  padding-top: 42px;
+  border-top: 1px solid rgba(255, 243, 227, 0.12);
+}
+
+.project-statement h2 {
+  max-width: 12ch;
+  margin: 0;
+  color: #f4ebe1;
+  font-size: clamp(2rem, 4.5vw, 4.3rem);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.project-statement-copy {
+  display: grid;
+  gap: 22px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.project-statement-copy p {
+  margin: 0;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1px;
+  margin: 72px 0 62px;
+  background: rgba(255, 243, 227, 0.1);
+}
+
+.project-figure {
+  grid-column: span 3;
+  margin: 0;
+  background:
+    radial-gradient(circle at 18% -8%, var(--project-glow), transparent 38%),
+    #070707;
+}
+
+.project-figure.is-wide {
+  grid-column: span 4;
+}
+
+.project-figure.is-narrow {
+  grid-column: span 2;
+}
+
+.project-figure.is-full {
+  grid-column: 1 / -1;
+}
+
+.project-figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.project-figure.is-wide img,
+.project-figure.is-full img {
+  aspect-ratio: 16 / 9;
+}
+
+.project-figure.is-narrow img {
+  aspect-ratio: 4 / 5;
+}
+
+.project-figure figcaption {
+  min-height: 78px;
+  margin: 0;
+  padding: 18px 20px 20px;
+}
+
+.project-story .detail-link {
+  margin-bottom: 28px;
+}
+
 .contact-links a:hover,
 .contact-links a:focus-visible {
   color: #fff8ef;
@@ -954,6 +1151,45 @@ body[data-theme="light"] .project-detail-card p:first-child {
   color: rgba(5, 5, 5, 0.72);
 }
 
+body[data-theme="light"] .project-story {
+  --project-panel: rgba(239, 232, 220, 0.82);
+}
+
+body[data-theme="light"] .project-visual-hero,
+body[data-theme="light"] .project-figure,
+body[data-theme="light"] .project-meta div {
+  background:
+    radial-gradient(circle at 18% -8%, var(--project-glow), transparent 42%),
+    rgba(239, 232, 220, 0.82);
+}
+
+body[data-theme="light"] .project-visual-hero {
+  border-color: rgba(5, 5, 5, 0.12);
+}
+
+body[data-theme="light"] .project-visual-hero::after {
+  background: linear-gradient(180deg, transparent 60%, rgba(244, 239, 231, 0.24));
+}
+
+body[data-theme="light"] .project-visual-hero figcaption,
+body[data-theme="light"] .project-figure figcaption {
+  color: rgba(5, 5, 5, 0.56);
+}
+
+body[data-theme="light"] .project-meta,
+body[data-theme="light"] .project-gallery {
+  background: rgba(5, 5, 5, 0.1);
+}
+
+body[data-theme="light"] .project-meta strong,
+body[data-theme="light"] .project-statement h2 {
+  color: #050505;
+}
+
+body[data-theme="light"] .project-statement {
+  border-top-color: rgba(5, 5, 5, 0.12);
+}
+
 body[data-theme="light"] .project-row,
 body[data-theme="light"] .timeline article,
 body[data-theme="light"] .contact-links a {
@@ -1064,8 +1300,55 @@ body[data-theme="light"] .project-featured img {
   .timeline article,
   .project-page-shell,
   .project-detail-grid,
+  .project-meta,
+  .project-statement,
   .craft-notes p {
     grid-template-columns: 1fr;
+  }
+
+  .project-visual-hero {
+    margin-top: 34px;
+  }
+
+  .project-visual-hero img {
+    aspect-ratio: 4 / 5;
+  }
+
+  .project-visual-hero figcaption {
+    position: static;
+    padding: 16px 18px 18px;
+    text-align: left;
+  }
+
+  .project-meta {
+    margin-bottom: 46px;
+  }
+
+  .project-meta div {
+    min-height: 112px;
+  }
+
+  .project-statement {
+    margin: 58px 0;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+    margin: 54px 0 46px;
+  }
+
+  .project-figure,
+  .project-figure.is-wide,
+  .project-figure.is-narrow,
+  .project-figure.is-full {
+    grid-column: auto;
+  }
+
+  .project-figure img,
+  .project-figure.is-wide img,
+  .project-figure.is-full img,
+  .project-figure.is-narrow img {
+    aspect-ratio: 4 / 5;
   }
 
   .project-row time {
