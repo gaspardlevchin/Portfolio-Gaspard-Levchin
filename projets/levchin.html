@@ -3,24 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LEVCHIN - Projet</title>
+    <title data-i18n="project.levchin.title">LEVCHIN - Projet</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css?v=language-1" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="../index.html#top" aria-label="Retour au portfolio">
+      <a class="brand" href="../index.html#top" aria-label="Retour au portfolio" data-i18n-aria-label="aria.backPortfolio">
         <span class="brand-name">Gaspard Levchin</span>
       </a>
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a href="../index.html#signature">Profil</a>
-        <a href="../index.html#projets">Projet</a>
-        <a href="../index.html#parcours">Parcours</a>
-        <a href="../index.html#contact">Contact</a>
+      <nav class="site-nav" aria-label="Navigation principale" data-i18n-aria-label="aria.mainNav">
+        <a href="../index.html#signature" data-i18n="nav.profile">Profil</a>
+        <a href="../index.html#projets" data-i18n="nav.project">Projet</a>
+        <a href="../index.html#parcours" data-i18n="nav.experience">Parcours</a>
+        <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Changer le thème" data-theme-toggle>
+      <button class="theme-toggle" type="button" aria-label="Changer le thème" data-theme-toggle data-i18n-aria-label="aria.theme">
         <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
         <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
       </button>
@@ -30,30 +33,37 @@
       <div class="project-page-shell">
         <div class="section-label">
           <span>01</span>
-          <p>Projet</p>
+          <p data-i18n="project.label">Projet</p>
         </div>
         <article class="project-detail">
-          <p class="eyebrow">Création d'entreprise / Paris</p>
+          <p class="eyebrow" data-i18n="project.levchin.kicker">Création d'entreprise / Paris</p>
           <h1>LEVCHIN</h1>
-          <p class="hero-lead">
+          <p class="hero-lead" data-i18n="project.levchin.lead">
             Maison de design et de mode en construction. Le projet pose les bases
             d'un univers de marque entre lignes affirmées, matériaux bruts,
             intention visuelle et désir d'objet.
           </p>
           <div class="project-detail-grid">
             <section class="project-detail-card">
-              <p>Direction</p>
-              <p>Construction d'une identité, d'un vocabulaire formel et d'une présence digitale cohérente.</p>
+              <p data-i18n="project.levchin.card1.title">Direction</p>
+              <p data-i18n="project.levchin.card1.body">Construction d'une identité, d'un vocabulaire formel et d'une présence digitale cohérente.</p>
             </section>
             <section class="project-detail-card">
-              <p>Recherche</p>
-              <p>Équilibre entre design, mode, matière, récit et exigence de fabrication.</p>
+              <p data-i18n="project.levchin.card2.title">Recherche</p>
+              <p data-i18n="project.levchin.card2.body">Équilibre entre design, mode, matière, récit et exigence de fabrication.</p>
             </section>
           </div>
-          <a class="detail-link" href="../index.html#projets">Retour à la sélection</a>
+          <a class="detail-link" href="../index.html#projets" data-i18n="project.back">Retour à la sélection</a>
         </article>
       </div>
     </main>
-    <script src="../script.js"></script>
+
+    <div class="language-switcher" data-language-switcher aria-label="Sélecteur de langue" data-i18n-aria-label="aria.language">
+      <span data-i18n="language.label">Langue :</span>
+      <button type="button" data-language-option="fr" class="is-active" aria-pressed="true">Français</button>
+      <button type="button" data-language-option="en" aria-pressed="false">English</button>
+    </div>
+
+    <script src="../script.js?v=language-1"></script>
   </body>
 </html>

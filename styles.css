@@ -100,6 +100,47 @@ a {
   display: none;
 }
 
+.language-switcher {
+  position: fixed;
+  right: var(--edge);
+  bottom: 26px;
+  z-index: 30;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+  color: rgba(239, 230, 221, 0.58);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: none;
+}
+
+.language-switcher span {
+  color: rgba(239, 230, 221, 0.42);
+}
+
+.language-switcher button {
+  border: 0;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  transition: color 320ms var(--ease-smooth), opacity 320ms var(--ease-smooth), transform 420ms var(--ease-smooth);
+  will-change: transform;
+}
+
+.language-switcher button:hover,
+.language-switcher button:focus-visible {
+  color: #fff8ef;
+  outline: 0;
+  transform: translate3d(0, -1px, 0);
+}
+
+.language-switcher button.is-active {
+  color: rgba(239, 230, 221, 0.9);
+}
+
 .site-header.is-scrolled {
   background-color: rgba(5, 5, 5, 0.68);
   backdrop-filter: blur(18px);
@@ -801,6 +842,20 @@ body[data-theme="light"] .site-header.is-scrolled {
   background-color: rgba(244, 239, 231, 0.62);
 }
 
+body[data-theme="light"] .language-switcher {
+  color: rgba(5, 5, 5, 0.58);
+}
+
+body[data-theme="light"] .language-switcher span {
+  color: rgba(5, 5, 5, 0.42);
+}
+
+body[data-theme="light"] .language-switcher button:hover,
+body[data-theme="light"] .language-switcher button:focus-visible,
+body[data-theme="light"] .language-switcher button.is-active {
+  color: #050505;
+}
+
 body[data-theme="light"] .site-nav a,
 body[data-theme="light"] .theme-toggle,
 body[data-theme="light"] .eyebrow,
@@ -927,6 +982,13 @@ body[data-theme="light"] .project-featured img {
 
   .site-nav a {
     font-size: 0.64rem;
+  }
+
+  .language-switcher {
+    right: 20px;
+    bottom: 18px;
+    gap: 10px;
+    font-size: 0.62rem;
   }
 
   h1 {

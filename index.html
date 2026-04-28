@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gaspard Levchin - Portfolio</title>
+    <title data-i18n="home.title">Gaspard Levchin - Portfolio</title>
     <meta
       name="description"
       content="Portfolio de Gaspard Levchin, profil créatif entre direction artistique, image, design et mode."
+      data-i18n-content="home.meta.description"
     />
     <meta property="og:title" content="Gaspard Levchin - Portfolio" />
     <meta
       property="og:description"
       content="Direction artistique, image, design & mode. Paris."
+      data-i18n-content="home.meta.ogDescription"
     />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,20 +22,20 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=light-header-6" />
+    <link rel="stylesheet" href="styles.css?v=language-1" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Retour en haut">
+      <a class="brand" href="#top" aria-label="Retour en haut" data-i18n-aria-label="aria.backTop">
         <span class="brand-name">Gaspard Levchin</span>
       </a>
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a href="#signature">Profil</a>
-        <a href="#projets">Projet</a>
-        <a href="#parcours">Parcours</a>
-        <a href="#contact">Contact</a>
+      <nav class="site-nav" aria-label="Navigation principale" data-i18n-aria-label="aria.mainNav">
+        <a href="#signature" data-i18n="nav.profile">Profil</a>
+        <a href="#projets" data-i18n="nav.project">Projet</a>
+        <a href="#parcours" data-i18n="nav.experience">Parcours</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Changer le thème" data-theme-toggle>
+      <button class="theme-toggle" type="button" aria-label="Changer le thème" data-theme-toggle data-i18n-aria-label="aria.theme">
         <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
         <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
       </button>
@@ -46,17 +48,17 @@
         </div>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-grid">
-          <p class="eyebrow">Portfolio créatif / Paris</p>
+          <p class="eyebrow" data-i18n="home.hero.eyebrow">Portfolio créatif / Paris</p>
           <h1 id="hero-title">Gaspard Levchin</h1>
-          <p class="hero-lead">
+          <p class="hero-lead" data-i18n="home.hero.lead">
             Direction artistique, image et design & mode. Un regard précis pour
             construire des expériences visuelles haut de gamme, entre matière,
             intention et exigence.
           </p>
-          <div class="hero-actions" aria-label="Actions principales">
+          <div class="hero-actions" aria-label="Actions principales" data-i18n-aria-label="aria.mainActions">
             <a class="link-line" href="#projets">
               <span class="link-line-mark" aria-hidden="true"></span>
-              <span class="link-text">Découvrir les projets</span>
+              <span class="link-text" data-i18n="home.hero.cta">Découvrir les projets</span>
               <span class="link-arrow" aria-hidden="true">→</span>
             </a>
           </div>
@@ -66,11 +68,11 @@
       <section class="section intro-section" id="signature">
         <div class="section-label">
           <span>01</span>
-          <p>Signature</p>
+          <p data-i18n="home.signature.label">Signature</p>
         </div>
         <div class="intro-copy">
-          <h2>Un profil entre regard, matière et expérience client.</h2>
-          <p>
+          <h2 data-i18n="home.signature.title">Un profil entre regard, matière et expérience client.</h2>
+          <p data-i18n="home.signature.body">
             Doué d'un sens affûté du détail et de l'esthétique, j'allie rigueur
             et créativité au service d'une expérience client haut de gamme. Mon
             parcours relie l'image, le retail, la conception visuelle et la
@@ -82,24 +84,24 @@
       <section class="section territories" aria-labelledby="territories-title">
         <div class="section-label">
           <span>02</span>
-          <p>Territoires</p>
+          <p data-i18n="home.territories.label">Territoires</p>
         </div>
         <div class="territory-grid">
           <article class="territory">
-            <p>Direction artistique</p>
-            <h3>Moodboard, esquisse, conception visuelle.</h3>
+            <p data-i18n="home.territory.art">Direction artistique</p>
+            <h3 data-i18n="home.territory.art.body">Moodboard, esquisse, conception visuelle.</h3>
           </article>
           <article class="territory">
-            <p>Image</p>
-            <h3>Photographie argentique et numérique, caméra Sony, Blackmagic, RED.</h3>
+            <p data-i18n="home.territory.image">Image</p>
+            <h3 data-i18n="home.territory.image.body">Photographie argentique et numérique, caméra Sony, Blackmagic, RED.</h3>
           </article>
           <article class="territory">
-            <p>Design & mode</p>
-            <h3>Lignes affirmées, matières brutes, culture mode et objet.</h3>
+            <p data-i18n="home.territory.design">Design & mode</p>
+            <h3 data-i18n="home.territory.design.body">Lignes affirmées, matières brutes, culture mode et objet.</h3>
           </article>
           <article class="territory">
-            <p>Retail haut de gamme</p>
-            <h3>Relation client, visual merchandising, gestion et précision terrain.</h3>
+            <p data-i18n="home.territory.retail">Retail haut de gamme</p>
+            <h3 data-i18n="home.territory.retail.body">Relation client, visual merchandising, gestion et précision terrain.</h3>
           </article>
         </div>
       </section>
@@ -107,11 +109,11 @@
       <section class="section projects-section" id="projets">
         <div class="section-label">
           <span>03</span>
-          <p>Sélection</p>
+          <p data-i18n="home.selection.label">Sélection</p>
         </div>
         <div class="section-head">
-          <h2>Projets et expériences sélectionnés.</h2>
-          <p>
+          <h2 data-i18n="home.selection.title">Projets et expériences sélectionnés.</h2>
+          <p data-i18n="home.selection.body">
             Une sélection resserrée de projets entre image, marque, retail et
             direction visuelle, pensée comme une lecture immédiate de mon
             territoire créatif.
@@ -122,16 +124,16 @@
           <article class="project-row project-featured">
             <div class="project-index">01</div>
             <div>
-              <p class="project-kicker">Création d'entreprise / Paris</p>
-              <h3>LEVCHIN, maison de design & mode</h3>
-              <p>
+              <p class="project-kicker" data-i18n="home.project.levchin.kicker">Création d'entreprise / Paris</p>
+              <h3 data-i18n="home.project.levchin.title">LEVCHIN, maison de design & mode</h3>
+              <p data-i18n="home.project.levchin.body">
                 Construction d'un univers de marque guidé par l'équilibre entre
                 forme, matière et intention. Travail sur l'identité, le récit,
                 la présence digitale et la recherche de pièces à la croisée du
                 design, de la mode et de l'objet.
               </p>
               <div class="project-actions">
-                <a href="https://hdlightcraft-tech.github.io/levchin-site/index.html" target="_blank" rel="noreferrer">
+                <a href="https://hdlightcraft-tech.github.io/levchin-site/index.html" target="_blank" rel="noreferrer" data-i18n="home.project.view">
                   Voir le projet
                 </a>
               </div>
@@ -142,86 +144,86 @@
           <article class="project-row">
             <div class="project-index">02</div>
             <div>
-              <p class="project-kicker">Exposition photo / STAY ARTY</p>
+              <p class="project-kicker" data-i18n="home.project.tvinted.kicker">Exposition photo / STAY ARTY</p>
               <h3>TVINTED DVRK</h3>
-              <p>
+              <p data-i18n="home.project.tvinted.body">
                 Projet photographique exposé à l'agence STAY ARTY, autour d'une
                 esthétique sombre, frontale et urbaine. Travail de sélection,
                 cohérence visuelle et présentation dans un contexte d'exposition.
               </p>
               <div class="project-actions">
-                <a href="projets/tvinted-dvrk.html">Détail projet</a>
+                <a href="projets/tvinted-dvrk.html" data-i18n="home.project.detail">Détail projet</a>
               </div>
             </div>
-            <time>Mars / Avril 2024</time>
+            <time data-i18n="home.date.tvinted">Mars / Avril 2024</time>
           </article>
 
           <article class="project-row">
             <div class="project-index">03</div>
             <div>
-              <p class="project-kicker">Théâtre / Compagnie Les Larrons</p>
+              <p class="project-kicker" data-i18n="home.project.arche.kicker">Théâtre / Compagnie Les Larrons</p>
               <h3>L'Arche et le Château</h3>
-              <p>
+              <p data-i18n="home.project.arche.body">
                 Création d'images pour un projet théâtre, avec une attention
                 portée aux corps, aux présences et à la lecture de scène.
                 Adaptation du regard photo à un univers narratif et vivant.
               </p>
               <div class="project-actions">
-                <a href="projets/arche-chateau.html">Détail projet</a>
+                <a href="projets/arche-chateau.html" data-i18n="home.project.detail">Détail projet</a>
               </div>
             </div>
-            <time>Février 2024</time>
+            <time data-i18n="home.date.feb2024">Février 2024</time>
           </article>
 
           <article class="project-row">
             <div class="project-index">04</div>
             <div>
-              <p class="project-kicker">Packshot commercial</p>
+              <p class="project-kicker" data-i18n="home.project.packshot.kicker">Packshot commercial</p>
               <h3>Des Fermes, Un Quartier</h3>
-              <p>
+              <p data-i18n="home.project.packshot.body">
                 Réalisation de photographies commerciales et packshot pour des
                 produits alimentaires. Mise en valeur claire, lisible et fiable,
                 pensée pour un usage de communication et de vente.
               </p>
               <div class="project-actions">
-                <a href="projets/des-fermes-un-quartier.html">Détail projet</a>
+                <a href="projets/des-fermes-un-quartier.html" data-i18n="home.project.detail">Détail projet</a>
               </div>
             </div>
-            <time>Mars 2024</time>
+            <time data-i18n="home.date.mar2024">Mars 2024</time>
           </article>
 
           <article class="project-row">
             <div class="project-index">05</div>
             <div>
-              <p class="project-kicker">Événementiel</p>
+              <p class="project-kicker" data-i18n="home.project.event.kicker">Événementiel</p>
               <h3>Dîner du RCF</h3>
-              <p>
+              <p data-i18n="home.project.event.body">
                 Captation photographique événementielle à l'Aéroclub de France.
                 Travail de discrétion, réactivité et rendu élégant pour restituer
                 une atmosphère institutionnelle sans figer le moment.
               </p>
               <div class="project-actions">
-                <a href="projets/diner-rcf.html">Détail projet</a>
+                <a href="projets/diner-rcf.html" data-i18n="home.project.detail">Détail projet</a>
               </div>
             </div>
-            <time>Octobre 2023</time>
+            <time data-i18n="home.date.oct2023">Octobre 2023</time>
           </article>
 
           <article class="project-row">
             <div class="project-index">06</div>
             <div>
-              <p class="project-kicker">Concert / Lyon</p>
+              <p class="project-kicker" data-i18n="home.project.concert.kicker">Concert / Lyon</p>
               <h3>The Sausages</h3>
-              <p>
+              <p data-i18n="home.project.concert.body">
                 Photographie de concert au Transbordeur, dans un contexte de
                 lumière mouvante et d'énergie rapide. Recherche d'images qui
                 gardent la tension, le rythme et la présence de la scène.
               </p>
               <div class="project-actions">
-                <a href="projets/the-sausages.html">Détail projet</a>
+                <a href="projets/the-sausages.html" data-i18n="home.project.detail">Détail projet</a>
               </div>
             </div>
-            <time>Juillet 2022</time>
+            <time data-i18n="home.date.jul2022">Juillet 2022</time>
           </article>
         </div>
       </section>
@@ -229,22 +231,22 @@
       <section class="section timeline-section" id="parcours">
         <div class="section-label">
           <span>04</span>
-          <p>Parcours</p>
+          <p data-i18n="home.experience.label">Parcours</p>
         </div>
         <div class="timeline">
           <article>
-            <time>Avril 2024 à aujourd’hui</time>
-            <h3>Création d’Entreprise — Design & Mode</h3>
-            <p>
+            <time data-i18n="home.time.april2024">Avril 2024 à aujourd’hui</time>
+            <h3 data-i18n="home.exp.levchin.title">Création d’Entreprise — Design & Mode</h3>
+            <p data-i18n="home.exp.levchin.body">
               Développement de la maison LEVCHIN à Paris. Construction d'un
               territoire de marque, recherche de direction artistique, écriture
               d'un univers visuel et préparation d'une première présence digitale.
             </p>
           </article>
           <article>
-            <time>Octobre 2022 à 2024</time>
-            <h3>Vendeur Polyvalent — Ideco Store</h3>
-            <p>
+            <time data-i18n="home.time.oct2022">Octobre 2022 à 2024</time>
+            <h3 data-i18n="home.exp.ideco.title">Vendeur Polyvalent — Ideco Store</h3>
+            <p data-i18n="home.exp.ideco.body">
               Expérience retail à Paris 10e : relation client, conseil, tenue de
               l'espace de vente, visual merchandising et gestion des stocks.
               Développement d'un sens concret du service, du détail et du rythme
@@ -252,18 +254,18 @@
             </p>
           </article>
           <article>
-            <time>Septembre 2023</time>
-            <h3>Commercial — Quycup & Blogo</h3>
-            <p>
+            <time data-i18n="home.time.sept2023">Septembre 2023</time>
+            <h3 data-i18n="home.exp.commercial.title">Commercial — Quycup & Blogo</h3>
+            <p data-i18n="home.exp.commercial.body">
               Mission commerciale sur Maison & Objet à Villepinte. Présentation
               de produits, échange avec des visiteurs professionnels et lecture
               rapide des besoins dans un contexte salon exigeant.
             </p>
           </article>
           <article>
-            <time>2020 à 2022</time>
-            <h3>BTS Audiovisuel — Spécialité Image</h3>
-            <p>
+            <time data-i18n="home.time.2020">2020 à 2022</time>
+            <h3 data-i18n="home.exp.bts.title">BTS Audiovisuel — Spécialité Image</h3>
+            <p data-i18n="home.exp.bts.body">
               Formation image à l'EFCAM, à Riom. Culture de cadre, lumière,
               photographie, matériel caméra et postproduction. Base technique
               solide pour construire des images avec méthode.
@@ -275,25 +277,25 @@
       <section class="section craft-section">
         <div class="section-label">
           <span>05</span>
-          <p>Outils</p>
+          <p data-i18n="home.tools.label">Outils</p>
         </div>
         <div class="craft-grid">
           <div class="craft-copy">
-            <h2>Culture visuelle.</h2>
+            <h2 data-i18n="home.tools.title">Culture visuelle.</h2>
             <div class="craft-notes">
-              <p><strong>Architecture</strong> Bianca Censori, Zaha Hadid.</p>
-              <p><strong>Mode</strong> YSL, Courrèges, Balmain, Rick Owens.</p>
-              <p><strong>Design</strong> modern, organic, art déco.</p>
-              <p><strong>Photographie</strong> Greig Fraser, David LaChapelle.</p>
+              <p data-i18n="home.note.arch"><strong>Architecture</strong> Bianca Censori, Zaha Hadid.</p>
+              <p data-i18n="home.note.fashion"><strong>Mode</strong> YSL, Courrèges, Balmain, Rick Owens.</p>
+              <p data-i18n="home.note.design"><strong>Design</strong> modern, organic, art déco.</p>
+              <p data-i18n="home.note.photo"><strong>Photographie</strong> Greig Fraser, David LaChapelle.</p>
             </div>
           </div>
-          <ul class="tool-list" aria-label="Competences">
+          <ul class="tool-list" aria-label="Competences" data-i18n-aria-label="aria.skills">
             <li>Suite Adobe / Suite Affinity</li>
             <li>Blender</li>
             <li>DaVinci Resolve</li>
             <li>Instagram / TikTok</li>
-            <li>IA appliquée aux workflows créatifs</li>
-            <li>Anglais C1</li>
+            <li data-i18n="home.tools.ai">IA appliquée aux workflows créatifs</li>
+            <li data-i18n="home.tools.english">Anglais C1</li>
           </ul>
         </div>
       </section>
@@ -304,19 +306,19 @@
           <p>PDF</p>
         </div>
         <div class="pdf-callout">
-          <p class="eyebrow">Version imprimable</p>
-          <h2 id="pdf-title">Voir la version PDF du portfolio.</h2>
+          <p class="eyebrow" data-i18n="home.pdf.kicker">Version imprimable</p>
+          <h2 id="pdf-title" data-i18n="home.pdf.title">Voir la version PDF du portfolio.</h2>
           <a class="link-line link-line-soft" href="assets/portfolio-gaspard-levchin.pdf" data-pdf-link>
             <span class="link-line-mark" aria-hidden="true"></span>
-            <span class="link-text">Ouvrir le PDF</span>
+            <span class="link-text" data-i18n="home.pdf.cta">Ouvrir le PDF</span>
             <span class="link-arrow" aria-hidden="true">→</span>
           </a>
         </div>
       </section>
 
       <section class="contact-section" id="contact">
-        <p class="eyebrow">Contact</p>
-        <h2>Construire une image, une pièce, une expérience.</h2>
+        <p class="eyebrow" data-i18n="nav.contact">Contact</p>
+        <h2 data-i18n="home.contact.title">Construire une image, une pièce, une expérience.</h2>
         <div class="contact-links">
           <a href="mailto:gaspardlevchin.pro@gmail.com">gaspardlevchin.pro@gmail.com</a>
           <a href="tel:+33767081020">+33 7 67 08 10 20</a>
@@ -325,6 +327,12 @@
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <div class="language-switcher" data-language-switcher aria-label="Sélecteur de langue" data-i18n-aria-label="aria.language">
+      <span data-i18n="language.label">Langue :</span>
+      <button type="button" data-language-option="fr" class="is-active" aria-pressed="true">Français</button>
+      <button type="button" data-language-option="en" aria-pressed="false">English</button>
+    </div>
+
+    <script src="script.js?v=language-1"></script>
   </body>
 </html>
