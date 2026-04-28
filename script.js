@@ -14,6 +14,8 @@ const translations = {
     "aria.mainNav": "Main navigation",
     "aria.theme": "Change theme",
     "aria.language": "Change language",
+    "aria.prevImage": "Previous image",
+    "aria.nextImage": "Next image",
     "aria.mainActions": "Primary actions",
     "aria.skills": "Skills",
     "nav.profile": "Profile",
@@ -226,7 +228,77 @@ const translations = {
     "project.sausages.alt.crowd": "Concert crowd portrait",
     "project.sausages.alt.stage": "Stage and live concert atmosphere",
     "project.sausages.alt.live": "Performer captured during a concert",
-    "project.sausages.alt.energy": "Concert energy and movement"
+    "project.sausages.alt.energy": "Concert energy and movement",
+    "home.project.tvinted.body": "A photographic series exhibited at STAY ARTY: nocturnal architecture, cold verticals, image selection, catalogue logic and communication formats developed around the exhibition.",
+    "home.project.arche.body": "A theatre image project for Compagnie Les Larrons, focused on the threshold of the stage: curtain, bodies, objects, gestures and narrative fragments that extend the identity of the performance.",
+    "home.project.packshot.kicker": "Local retail / product image",
+    "home.project.packshot.body": "Photography for a neighborhood food retailer, balancing product clarity, shelf readability, material warmth and discreet retouching for usable commercial images.",
+    "home.project.event.kicker": "Institutional event",
+    "home.project.event.body": "Event photography at the Aero-Club de France, with a discreet documentary approach: speeches, group moments, room atmosphere and interactions captured without interrupting the evening.",
+    "home.project.perfume.kicker": "BTS study / advertising film",
+    "home.project.perfume.title": "Perfume film",
+    "home.project.perfume.body": "A short advertising film for an imagined perfume, created with two former classmates. I worked as director of photography on an intimate trajectory: love, betrayal, disappointment, nightlife and returning memory.",
+    "home.date.study": "Study project",
+    "home.project.concert.body": "Live photography at Le Transbordeur, built around unstable light, fast movement and stage energy. The series keeps the speed of the moment while preserving image structure.",
+    "project.tvinted.lead": "A photographic series exhibited at STAY ARTY, built as a cold urban passage: glass facades, vertical lines, fragments of light and architectural silence.",
+    "project.tvinted.meta.context": "Exhibition at STAY ARTY, Paris",
+    "project.tvinted.meta.role": "Photography, selection, hanging rhythm and graphic adaptations",
+    "project.tvinted.meta.output": "Exhibited works, catalogue and communication formats",
+    "project.tvinted.intent.title": "A mental city, almost silent.",
+    "project.tvinted.intent.body1": "TVINTED DVRK begins with contemporary architecture treated as emotional material. Buildings become masses, planes and reflections; the city is not shown as a backdrop, but as a cold and inward presence.",
+    "project.tvinted.intent.body2": "The layout deliberately leaves space between the works to recover the feeling of an exhibition: each image must be able to stand alone, then be read again as part of the full series.",
+    "project.tvinted.exhibition.title": "Hanging rhythm and series reading",
+    "project.tvinted.exhibition.body": "The selection work focuses on rhythm: alternating vertical images, more horizontal views and graphic pauses to create a progression. The short titles strengthen the feeling of urban signals, almost like markers inside an abstract city.",
+    "project.tvinted.communication.title": "Communication",
+    "project.tvinted.communication.body": "The communication materials are kept together separately: they extend the exhibition identity without being confused with the works themselves. The banner establishes the atmosphere, while the story format adapts the series to a mobile reading.",
+    "project.arche.lead": "An image series around a theatre creation, moving between curtain, objects, bodies in performance and threshold moments where the stage starts building its own world.",
+    "project.arche.meta.role": "Stage photography, narrative reading and communication images",
+    "project.arche.meta.output": "Visual sequence for memory, promotion and performance identity",
+    "project.arche.intent.title": "Entering the stage through the threshold.",
+    "project.arche.intent.body1": "The opening image, separated in the source folder, works like a curtain: it sets the entrance into the universe before the bodies and objects appear. The rest of the series follows presences, suspended gestures and details that tell the play without reducing it.",
+    "project.arche.intent.body2": "The page direction stays dark, red and theatrical, but without framing the images: they appear as fragments of the stage.",
+    "project.arche.carousel.title": "Opening and stage",
+    "project.arche.carousel.body": "The first image keeps its role as a threshold, then the carousel unfolds fragments of performance: objects, gazes, distances, bodies in motion and quieter moments.",
+    "project.packshot.kicker": "Local retail / product image",
+    "project.packshot.lead": "Photography for a neighborhood food retailer: making products, labels, materials and the atmosphere of the place readable without losing the feeling of proximity.",
+    "project.packshot.meta.role": "Product photography, shelf framing and light retouching",
+    "project.packshot.meta.output": "Usable visuals for presentation, sales and digital materials",
+    "project.packshot.intent.title": "Showing the product without separating it from the place.",
+    "project.packshot.intent.body1": "The goal was not to create a cold studio image, but to give the products a clear commercial reading while preserving the wood, shelving, handwritten labels and warmth of a neighborhood shop.",
+    "project.packshot.intent.body2": "Some images also required discreet visual cleaning: reducing reflections, calming distracting marks and keeping the image clean without erasing the real character of the place.",
+    "project.packshot.carousel.title": "Shelves, products, signage",
+    "project.packshot.carousel.body": "The carousel keeps the images together to show continuity between packshot, shelf display and atmosphere: the product is photographed as a sales object, but also as part of the commercial setting.",
+    "project.rcf.kicker": "Institutional event",
+    "project.rcf.lead": "Photographic coverage of a dinner at the Aero-Club de France, designed to preserve the character of the venue, the clarity of speeches and the warmth of the exchanges.",
+    "project.rcf.meta.role": "Event photography, key-moment tracking and image selection",
+    "project.rcf.meta.output": "Photo reportage for internal memory and communication",
+    "project.rcf.intent.title": "Staying discreet without losing the story.",
+    "project.rcf.intent.body1": "For an institutional event, images need to be useful without becoming intrusive. The work consists in following the evening, anticipating speeches, capturing groups and preserving an accurate atmosphere despite available light.",
+    "project.rcf.intent.body2": "The series favors restrained framing, readable expressions and natural transitions: photography of presence rather than staged moments.",
+    "project.rcf.carousel.title": "Evening sequence",
+    "project.rcf.carousel.body": "The images are kept in a single carousel to respect the rhythm of a reportage: room views, speeches, tables, exchanges and group moments remain in one continuous reading.",
+    "project.sausages.lead": "Live photography at Le Transbordeur, in unstable light where composition has to happen quickly with gestures, faces, stage and crowd.",
+    "project.sausages.meta.role": "Live photography, light adaptation and energy capture",
+    "project.sausages.meta.output": "Concert series, stage fragments and atmosphere images",
+    "project.sausages.intent.title": "Keeping the speed without losing the form.",
+    "project.sausages.intent.body1": "Concert photography requires a short reaction time: lights change, bodies move, and the stage keeps opening and closing. The work is to preserve a constructed image inside a situation that will not repeat.",
+    "project.sausages.intent.body2": "The carousel gives the series a reading close to a live set: one image appears, disappears and gives way to another energy.",
+    "project.sausages.carousel.title": "Stage, movement, crowd",
+    "project.sausages.carousel.body": "All images remain in one sequence to preserve the continuity of the concert: stage views, pauses, fast gestures and crowd fragments respond to one another as variations of the same live tension.",
+    "project.perfume.title": "Perfume film - BTS study",
+    "project.perfume.kicker": "BTS study / advertising film",
+    "project.perfume.heading": "Perfume film",
+    "project.perfume.lead": "A short film around an imagined perfume, created with two former classmates. I worked as director of photography on a sensitive narrative between love, betrayal, nightlife and disillusion.",
+    "project.perfume.meta.context": "BTS Audiovisual study project",
+    "project.perfume.meta.role": "Director of photography",
+    "project.perfume.meta.output": "Advertising film of roughly 45 seconds",
+    "project.perfume.intent.title": "Making an inner state felt before selling an object.",
+    "project.perfume.intent.body1": "The working document defined a precise emotional trajectory: love, betrayal, disappointment, celebration, then a return to love. The perfume becomes less a simple product than a trigger for memory, tied to a fragmented Parisian life.",
+    "project.perfume.intent.body2": "The point of view mixed internal perception, third-person observation and a wider reading of the character, with the idea of placing the viewer inside her perception rather than staying in illustrative advertising.",
+    "project.perfume.visual.title": "Image direction",
+    "project.perfume.visual.body": "The visual preparation relied on contrasting Paris locations: the metro, La Défense at blue hour and in the rain, Buttes-Chaumont during golden hour, a club, Pigalle at night and Rue du Panthéon by day. Each place had to carry a different emotional step.",
+    "project.perfume.method.title": "Method",
+    "project.perfume.method.body": "The cinematography work consisted in making those transitions coherent within a short format: choosing atmospheres, preserving character continuity and building an image expressive enough for a compact film."
   }
 };
 
@@ -367,6 +439,42 @@ languageOptions.forEach((option) => {
   option.addEventListener("click", () => {
     applyLanguage(option.dataset.languageOption);
   });
+});
+
+document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+  const track = carousel.querySelector("[data-carousel-track]");
+  const slides = Array.from(carousel.querySelectorAll("[data-carousel-slide]"));
+  const previous = carousel.querySelector("[data-carousel-prev]");
+  const next = carousel.querySelector("[data-carousel-next]");
+  const counter = carousel.querySelector("[data-carousel-counter]");
+  let activeIndex = 0;
+
+  const updateCarousel = () => {
+    if (!track || slides.length === 0) {
+      return;
+    }
+
+    track.style.transform = `translate3d(${-activeIndex * 100}%, 0, 0)`;
+
+    if (counter) {
+      const current = String(activeIndex + 1).padStart(2, "0");
+      const total = String(slides.length).padStart(2, "0");
+      counter.textContent = `${current} / ${total}`;
+    }
+  };
+
+  const goToSlide = (direction) => {
+    if (slides.length === 0) {
+      return;
+    }
+
+    activeIndex = (activeIndex + direction + slides.length) % slides.length;
+    updateCarousel();
+  };
+
+  previous?.addEventListener("click", () => goToSlide(-1));
+  next?.addEventListener("click", () => goToSlide(1));
+  updateCarousel();
 });
 
 document.addEventListener("click", (event) => {
