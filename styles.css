@@ -71,12 +71,15 @@ a {
   background: transparent;
   cursor: pointer;
   padding: 0;
+  transition: opacity 260ms var(--ease-smooth), transform 320ms var(--ease-smooth), filter 320ms var(--ease-smooth);
+  will-change: transform, opacity;
 }
 
 .theme-toggle:hover,
 .theme-toggle:focus-visible {
   opacity: 0.62;
   outline: 0;
+  transform: translate3d(0, -1px, 0);
 }
 
 .theme-icon {
@@ -85,6 +88,14 @@ a {
   height: 26px;
   flex: 0 0 auto;
   object-fit: contain;
+  transition: transform 420ms var(--ease-smooth), filter 320ms var(--ease-smooth);
+  will-change: transform;
+}
+
+.theme-toggle:hover .theme-icon,
+.theme-toggle:focus-visible .theme-icon {
+  filter: brightness(1.12);
+  transform: rotate(-7deg);
 }
 
 .theme-icon-moon {
@@ -92,7 +103,7 @@ a {
 }
 
 .site-header.is-scrolled {
-  background-color: rgba(5, 5, 5, 0.78);
+  background-color: rgba(5, 5, 5, 0.68);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   padding-block: 20px;
@@ -789,7 +800,7 @@ body[data-theme="light"] .theme-icon-moon {
 }
 
 body[data-theme="light"] .site-header.is-scrolled {
-  background-color: rgba(244, 239, 231, 0.82);
+  background-color: rgba(244, 239, 231, 0.72);
 }
 
 body[data-theme="light"] .site-nav a,
