@@ -798,7 +798,7 @@ body[data-theme="light"] .theme-icon-moon {
 }
 
 body[data-theme="light"] .site-header.is-scrolled {
-  background-color: rgba(244, 239, 231, 0.72);
+  background-color: rgba(244, 239, 231, 0.62);
 }
 
 body[data-theme="light"] .site-nav a,
