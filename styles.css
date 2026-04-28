@@ -71,15 +71,13 @@ a {
   background: transparent;
   cursor: pointer;
   padding: 0;
-  transition: opacity 260ms var(--ease-smooth), transform 320ms var(--ease-smooth), filter 320ms var(--ease-smooth);
-  will-change: transform, opacity;
+  transition: opacity 260ms var(--ease-smooth);
 }
 
 .theme-toggle:hover,
 .theme-toggle:focus-visible {
   opacity: 0.62;
   outline: 0;
-  transform: translate3d(0, -1px, 0);
 }
 
 .theme-icon {
@@ -88,14 +86,7 @@ a {
   height: 26px;
   flex: 0 0 auto;
   object-fit: contain;
-  transition: transform 420ms var(--ease-smooth), filter 320ms var(--ease-smooth);
-  will-change: transform;
-}
-
-.theme-toggle:hover .theme-icon,
-.theme-toggle:focus-visible .theme-icon {
-  filter: brightness(1.12);
-  transform: rotate(-7deg);
+  transition: opacity 260ms var(--ease-smooth);
 }
 
 .theme-icon-moon {
