@@ -71,12 +71,12 @@ a {
   background: transparent;
   cursor: pointer;
   padding: 0;
-  transition: opacity 260ms var(--ease-smooth);
+  transition: color 260ms var(--ease-smooth);
 }
 
 .theme-toggle:hover,
 .theme-toggle:focus-visible {
-  opacity: 0.62;
+  color: rgba(239, 230, 221, 0.62);
   outline: 0;
 }
 
@@ -85,11 +85,18 @@ a {
   width: 26px;
   height: 26px;
   flex: 0 0 auto;
-  object-fit: contain;
-  transition: opacity 260ms var(--ease-smooth);
+  background-color: currentColor;
+  transition: background-color 260ms var(--ease-smooth);
+  -webkit-mask: var(--theme-icon-mask) center / contain no-repeat;
+  mask: var(--theme-icon-mask) center / contain no-repeat;
+}
+
+.theme-icon-sun {
+  --theme-icon-mask: url("assets/soleil.svg?v=theme-color-4");
 }
 
 .theme-icon-moon {
+  --theme-icon-mask: url("assets/lune.svg?v=theme-color-4");
   display: none;
 }
 
@@ -806,6 +813,11 @@ body[data-theme="light"] .project-row time,
 body[data-theme="light"] .timeline p,
 body[data-theme="light"] .contact-links a {
   color: rgba(5, 5, 5, 0.72);
+}
+
+body[data-theme="light"] .theme-toggle:hover,
+body[data-theme="light"] .theme-toggle:focus-visible {
+  color: rgba(5, 5, 5, 0.48);
 }
 
 body[data-theme="light"] h1,
