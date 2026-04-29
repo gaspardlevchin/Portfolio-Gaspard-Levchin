@@ -6,6 +6,7 @@ const languageToggle = document.querySelector("[data-language-toggle]");
 const languageMenu = document.querySelector("[data-language-menu]");
 const languageCurrent = document.querySelector("[data-language-current]");
 const languageOptions = document.querySelectorAll("[data-language-option]");
+const fixedProjectTheme = document.body.classList.contains("project-fixed-theme");
 
 const translations = {
   en: {
@@ -237,7 +238,7 @@ const translations = {
     "home.project.event.body": "Event photography at the Aero-Club de France, with a discreet documentary approach: speeches, group moments, room atmosphere and interactions captured without interrupting the evening.",
     "home.project.perfume.kicker": "BTS study / advertising film",
     "home.project.perfume.title": "Perfume film",
-    "home.project.perfume.body": "A short advertising film for an imagined perfume, created with two former classmates. I worked as director of photography on an intimate trajectory: love, betrayal, disappointment, nightlife and returning memory.",
+    "home.project.perfume.body": "A project developed with two former classmates around a perfume film conceived as a creative carte blanche, within an advertising exercise shaped by web and television broadcast requirements.",
     "home.date.study": "Study project",
     "home.project.concert.body": "Live photography at Le Transbordeur, built around unstable light, fast movement and stage energy. The series keeps the speed of the moment while preserving image structure.",
     "project.tvinted.lead": "A photographic series exhibited at STAY ARTY, built as a cold urban passage: glass facades, vertical lines, fragments of light and architectural silence.",
@@ -288,17 +289,17 @@ const translations = {
     "project.perfume.title": "Perfume film - BTS study",
     "project.perfume.kicker": "BTS study / advertising film",
     "project.perfume.heading": "Perfume film",
-    "project.perfume.lead": "A short film around an imagined perfume, created with two former classmates. I worked as director of photography on a sensitive narrative between love, betrayal, nightlife and disillusion.",
+    "project.perfume.lead": "A project created with two former classmates around a perfume film approached as a creative carte blanche. I handled cinematography within an advertising framework shaped by online and television broadcast requirements.",
     "project.perfume.meta.context": "BTS Audiovisual study project",
     "project.perfume.meta.role": "Director of photography",
     "project.perfume.meta.output": "Advertising film of roughly 45 seconds",
-    "project.perfume.intent.title": "Making an inner state felt before selling an object.",
-    "project.perfume.intent.body1": "The working document defined a precise emotional trajectory: love, betrayal, disappointment, celebration, then a return to love. The perfume becomes less a simple product than a trigger for memory, tied to a fragmented Parisian life.",
-    "project.perfume.intent.body2": "The point of view mixed internal perception, third-person observation and a wider reading of the character, with the idea of placing the viewer inside her perception rather than staying in illustrative advertising.",
+    "project.perfume.intent.title": "Creative carte blanche within a precise advertising framework.",
+    "project.perfume.intent.body1": "The project was built around a free visual proposal, conceived as a short and readable perfume film. The goal was to create an image that felt refined, sensitive and professional while staying within the expected language of advertising.",
+    "project.perfume.intent.body2": "The cinematography therefore had to balance atmosphere, product legibility and delivery efficiency, while respecting the constraints tied to both online use and television broadcast.",
     "project.perfume.visual.title": "Image direction",
-    "project.perfume.visual.body": "The visual preparation relied on contrasting Paris locations: the metro, La Défense at blue hour and in the rain, Buttes-Chaumont during golden hour, a club, Pigalle at night and Rue du Panthéon by day. Each place had to carry a different emotional step.",
-    "project.perfume.method.title": "Method",
-    "project.perfume.method.body": "The cinematography work consisted in making those transitions coherent within a short format: choosing atmospheres, preserving character continuity and building an image expressive enough for a compact film."
+    "project.perfume.visual.body": "My role was to give the film a clear, coherent and usable visual identity by shaping shot rhythm, light quality and overall image continuity within a short format.",
+    "project.perfume.method.title": "Production framework",
+    "project.perfume.method.body": "The project was developed as an advertising communication exercise: a creative carte blanche, but with a professional level of finish and broadcast rules to respect according to the intended channels."
   }
 };
 
@@ -408,14 +409,18 @@ const applyLanguage = (language) => {
   }
 };
 
-let savedTheme = "dark";
-try {
-  savedTheme = localStorage.getItem("portfolio-theme") || "dark";
-} catch (error) {
-  savedTheme = "dark";
-}
+if (!fixedProjectTheme) {
+  let savedTheme = "dark";
+  try {
+    savedTheme = localStorage.getItem("portfolio-theme") || "dark";
+  } catch (error) {
+    savedTheme = "dark";
+  }
 
-applyTheme(savedTheme);
+  applyTheme(savedTheme);
+} else {
+  document.body.removeAttribute("data-theme");
+}
 
 let savedLanguage = "fr";
 try {
@@ -426,9 +431,11 @@ try {
 
 applyLanguage(savedLanguage);
 
-toggle?.addEventListener("click", () => {
-  applyTheme(document.body.dataset.theme === "light" ? "dark" : "light");
-});
+if (!fixedProjectTheme) {
+  toggle?.addEventListener("click", () => {
+    applyTheme(document.body.dataset.theme === "light" ? "dark" : "light");
+  });
+}
 
 languageToggle?.addEventListener("click", () => {
   const isOpen = languageSwitcher?.classList.toggle("is-open");

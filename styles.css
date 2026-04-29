@@ -767,6 +767,9 @@ h1 {
   --project-glow: rgba(208, 159, 104, 0.18);
   --project-bg: #050505;
   --project-surface: rgba(239, 230, 221, 0.08);
+  --project-text: #f4ebe1;
+  --project-muted: rgba(239, 230, 221, 0.68);
+  --project-line: rgba(255, 243, 227, 0.12);
 }
 
 .project-tvinted {
@@ -784,17 +787,23 @@ h1 {
 }
 
 .project-sausages {
-  --project-accent: #75b49e;
-  --project-glow: rgba(62, 151, 122, 0.24);
-  --project-bg: #06110f;
-  --project-surface: rgba(117, 180, 158, 0.1);
+  --project-accent: #31453b;
+  --project-glow: rgba(83, 105, 95, 0.18);
+  --project-bg: #98a39a;
+  --project-surface: rgba(24, 31, 27, 0.06);
+  --project-text: #121714;
+  --project-muted: rgba(18, 23, 20, 0.68);
+  --project-line: rgba(18, 23, 20, 0.16);
 }
 
 .project-fermes {
-  --project-accent: #c2a56c;
-  --project-glow: rgba(165, 135, 78, 0.22);
-  --project-bg: #1b1710;
-  --project-surface: rgba(194, 165, 108, 0.11);
+  --project-accent: #7e6c50;
+  --project-glow: rgba(140, 118, 82, 0.16);
+  --project-bg: #ddd1bf;
+  --project-surface: rgba(27, 22, 16, 0.06);
+  --project-text: #17130f;
+  --project-muted: rgba(23, 19, 15, 0.68);
+  --project-line: rgba(23, 19, 15, 0.16);
 }
 
 .project-arche {
@@ -813,11 +822,25 @@ h1 {
 
 .project-page.project-story {
   background: var(--project-bg);
+  color: var(--project-text);
 }
 
 .project-story + .site-footer {
   margin-top: 0;
   background: var(--project-bg);
+}
+
+.project-fixed-theme .theme-toggle {
+  display: none;
+}
+
+.project-fixed-theme .brand-name,
+.project-fixed-theme .site-nav a {
+  color: var(--project-muted);
+}
+
+.project-fixed-theme .site-header.is-scrolled {
+  background-color: color-mix(in srgb, var(--project-bg) 74%, transparent);
 }
 
 .project-story .project-page-shell {
@@ -826,6 +849,25 @@ h1 {
 
 .project-story .project-detail {
   width: min(1240px, 100%);
+}
+
+.project-story h1,
+.project-story .project-detail h1,
+.project-story .project-copy-block h2,
+.project-story .project-copy-block h3,
+.project-story .project-carousel-header h2,
+.project-story .detail-link,
+.project-story .project-meta strong {
+  color: var(--project-text);
+}
+
+.project-story .hero-lead,
+.project-story .project-copy-block p:not(.eyebrow) {
+  color: var(--project-muted);
+}
+
+.project-story .section-label {
+  color: color-mix(in srgb, var(--project-text) 58%, transparent);
 }
 
 .project-visual-hero {
@@ -875,8 +917,8 @@ h1 {
   gap: clamp(22px, 3.8vw, 58px);
   margin: 0 0 58px;
   padding: 24px 0 28px;
-  border-top: 1px solid rgba(255, 243, 227, 0.12);
-  border-bottom: 1px solid rgba(255, 243, 227, 0.12);
+  border-top: 1px solid var(--project-line);
+  border-bottom: 1px solid var(--project-line);
   background: transparent;
 }
 
@@ -1059,7 +1101,7 @@ h1 {
 }
 
 .project-copy-block {
-  grid-column: span 4;
+  grid-column: span 6;
   padding: 0;
   border: 0;
   background:
@@ -1068,7 +1110,7 @@ h1 {
 }
 
 .project-copy-block.is-wide {
-  grid-column: span 5;
+  grid-column: span 7;
 }
 
 .project-copy-block.is-full {
@@ -1081,9 +1123,8 @@ h1 {
 }
 
 .project-copy-block h2 {
-  max-width: 12ch;
+  max-width: 18ch;
   margin-bottom: 28px;
-  color: #f4ebe1;
   font-size: clamp(2rem, 4.2vw, 4.4rem);
   font-weight: 300;
   line-height: 1;
@@ -1091,7 +1132,6 @@ h1 {
 
 .project-copy-block h3 {
   margin-bottom: 14px;
-  color: #f4ebe1;
   font-size: clamp(1.25rem, 2vw, 2rem);
   font-weight: 400;
 }
@@ -1189,25 +1229,17 @@ h1 {
 
 .project-carousel-header {
   display: grid;
-  grid-template-columns: minmax(0, 0.72fr) minmax(220px, 0.28fr);
-  gap: clamp(28px, 5vw, 82px);
+  grid-template-columns: 1fr;
+  gap: 0;
   align-items: end;
 }
 
 .project-carousel-header h2 {
-  max-width: 14ch;
+  max-width: 22ch;
   margin: 0;
-  color: #f4ebe1;
   font-size: clamp(2rem, 4.3vw, 4.4rem);
   font-weight: 300;
   line-height: 1;
-}
-
-.project-carousel-header p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.98rem;
-  line-height: 1.85;
 }
 
 .carousel-frame {
@@ -1254,7 +1286,7 @@ h1 {
   justify-content: space-between;
   gap: 18px;
   padding-top: 12px;
-  border-top: 1px solid rgba(255, 243, 227, 0.12);
+  border-top: 1px solid var(--project-line);
 }
 
 .carousel-button {
@@ -1271,13 +1303,13 @@ h1 {
 
 .carousel-button:hover,
 .carousel-button:focus-visible {
-  color: #fff8ef;
+  color: var(--project-text);
   outline: 0;
   transform: translate3d(0, -2px, 0);
 }
 
 .carousel-counter {
-  color: rgba(239, 230, 221, 0.54);
+  color: var(--project-muted);
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -1294,6 +1326,7 @@ h1 {
   overflow: hidden;
   width: 100%;
   aspect-ratio: 16 / 9;
+  min-height: clamp(360px, 48vw, 760px);
   background:
     radial-gradient(circle at 14% 0%, var(--project-glow), transparent 48%),
     #08070c;
