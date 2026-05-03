@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=project-detail-6" />
+    <link rel="stylesheet" href="styles.css?v=project-detail-7" />
   </head>
   <body>
     <header class="site-header">
@@ -133,9 +133,9 @@
                 design, de la mode et de l'objet.
               </p>
               <div class="project-actions">
-                <a href="https://hdlightcraft-tech.github.io/levchin-site/index.html" target="_blank" rel="noreferrer" data-i18n="home.project.view">
+                <button type="button" data-levchin-notice data-i18n="home.project.view">
                   Voir le projet
-                </a>
+                </button>
               </div>
             </div>
             <img src="assets/levchin-logo.svg" alt="LEVCHIN" />
@@ -353,6 +353,10 @@
       </div>
     </footer>
 
-    <script src="script.js?v=project-detail-6"></script>
+    <div class="site-toast" data-site-toast role="status" aria-live="polite" aria-hidden="true">
+      <span data-i18n="home.levchin.notice">Le site arrive bientôt.</span>
+    </div>
+
+    <script src="script.js?v=project-detail-7"></script>
   </body>
 </html>

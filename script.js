@@ -6,7 +6,10 @@ const languageToggle = document.querySelector("[data-language-toggle]");
 const languageMenu = document.querySelector("[data-language-menu]");
 const languageCurrent = document.querySelector("[data-language-current]");
 const languageOptions = document.querySelectorAll("[data-language-option]");
+const levchinNoticeTrigger = document.querySelector("[data-levchin-notice]");
+const siteToast = document.querySelector("[data-site-toast]");
 const fixedProjectTheme = document.body.classList.contains("project-fixed-theme");
+let siteToastTimer;
 
 const translations = {
   en: {
@@ -50,6 +53,7 @@ const translations = {
     "home.project.levchin.title": "LEVCHIN, design & fashion house",
     "home.project.levchin.body": "Building a brand universe guided by the balance between form, material and intention. Work on identity, narrative, digital presence and the research of pieces at the intersection of design, fashion and object.",
     "home.project.view": "View project",
+    "home.levchin.notice": "The website is coming soon.",
     "home.project.detail": "Project details",
     "home.project.tvinted.kicker": "Photo exhibition / STAY ARTY",
     "home.project.tvinted.body": "A photographic project exhibited at STAY ARTY, built around a dark, frontal and urban aesthetic. Work on selection, visual coherence and presentation within an exhibition context.",
@@ -447,6 +451,23 @@ languageOptions.forEach((option) => {
     applyLanguage(option.dataset.languageOption);
   });
 });
+
+const showSiteToast = () => {
+  if (!siteToast) {
+    return;
+  }
+
+  window.clearTimeout(siteToastTimer);
+  siteToast.classList.add("is-visible");
+  siteToast.setAttribute("aria-hidden", "false");
+
+  siteToastTimer = window.setTimeout(() => {
+    siteToast.classList.remove("is-visible");
+    siteToast.setAttribute("aria-hidden", "true");
+  }, 2800);
+};
+
+levchinNoticeTrigger?.addEventListener("click", showSiteToast);
 
 document.querySelectorAll("[data-carousel]").forEach((carousel) => {
   const track = carousel.querySelector("[data-carousel-track]");
