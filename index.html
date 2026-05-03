@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=project-detail-7" />
+    <link rel="stylesheet" href="styles.css?v=project-detail-8" />
   </head>
   <body>
     <header class="site-header">
@@ -133,9 +133,14 @@
                 design, de la mode et de l'objet.
               </p>
               <div class="project-actions">
-                <button type="button" data-levchin-notice data-i18n="home.project.view">
-                  Voir le projet
-                </button>
+                <div class="project-notice-wrap">
+                  <button type="button" data-levchin-notice data-i18n="home.project.view">
+                    Voir le projet
+                  </button>
+                  <div class="site-toast" data-site-toast role="status" aria-live="polite" aria-hidden="true">
+                    <span data-i18n="home.levchin.notice">Le site arrive bientôt.</span>
+                  </div>
+                </div>
               </div>
             </div>
             <img src="assets/levchin-logo.svg" alt="LEVCHIN" />
@@ -353,10 +358,6 @@
       </div>
     </footer>
 
-    <div class="site-toast" data-site-toast role="status" aria-live="polite" aria-hidden="true">
-      <span data-i18n="home.levchin.notice">Le site arrive bientôt.</span>
-    </div>
-
-    <script src="script.js?v=project-detail-7"></script>
+    <script src="script.js?v=project-detail-8"></script>
   </body>
 </html>

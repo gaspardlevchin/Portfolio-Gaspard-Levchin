@@ -540,13 +540,20 @@ h1 {
   outline: 0;
 }
 
+.project-notice-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
 .site-toast {
-  position: fixed;
-  right: var(--edge);
-  bottom: clamp(28px, 4vw, 56px);
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 14px);
   z-index: 30;
-  max-width: min(320px, calc(100vw - 48px));
-  padding: 15px 18px 16px;
+  width: max-content;
+  max-width: min(300px, calc(100vw - 48px));
+  padding: 10px 13px 11px;
   color: #f4ebe1;
   background:
     radial-gradient(circle at 18% 0%, rgba(167, 128, 86, 0.22), transparent 58%),
@@ -560,13 +567,14 @@ h1 {
   opacity: 0;
   pointer-events: none;
   text-transform: uppercase;
-  transform: translate3d(0, 12px, 0);
+  transform: translate3d(-6px, -50%, 0);
   transition: opacity 360ms var(--ease-smooth), transform 460ms var(--ease-smooth);
+  white-space: nowrap;
 }
 
 .site-toast.is-visible {
   opacity: 1;
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, -50%, 0);
 }
 
 .project-row time {
@@ -1673,6 +1681,7 @@ body[data-theme="light"] .territory h3,
 body[data-theme="light"] .project-row h3,
 body[data-theme="light"] .timeline h3,
 body[data-theme="light"] .project-row a,
+body[data-theme="light"] .project-row button,
 body[data-theme="light"] .detail-link {
   color: #050505;
 }
@@ -1946,6 +1955,16 @@ body[data-theme="light"] .project-featured img {
   .hero-actions {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .site-toast {
+    top: calc(100% + 12px);
+    left: 0;
+    transform: translate3d(0, -4px, 0);
+  }
+
+  .site-toast.is-visible {
+    transform: translate3d(0, 0, 0);
   }
 
   .intro-copy h2,
