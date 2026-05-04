@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="profile.title">Gaspard Levchin - Profil</title>
+    <meta
+      name="description"
+      content="Profil biographique de Gaspard Levchin, entre image, design, mode, matière et expérience."
+      data-i18n-content="profile.meta.description"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=project-detail-12" />
+  </head>
+  <body class="project-fixed-theme profile-bio">
+    <header class="site-header">
+      <a class="brand" href="index.html#top" aria-label="Retour au portfolio" data-i18n-aria-label="aria.backPortfolio">
+        <span class="brand-name">Gaspard Levchin</span>
+      </a>
+      <nav class="site-nav" aria-label="Navigation principale" data-i18n-aria-label="aria.mainNav">
+        <a href="index.html#signature" data-i18n="nav.profile">Profil</a>
+        <a href="index.html#projets" data-i18n="nav.project">Projet</a>
+        <a href="index.html#parcours" data-i18n="nav.experience">Parcours</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Changer le thème" data-theme-toggle data-i18n-aria-label="aria.theme">
+        <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <main class="profile-page">
+      <section class="profile-intro" aria-labelledby="profile-title">
+        <div class="section-label">
+          <span>01</span>
+          <p data-i18n="profile.label">Profil</p>
+        </div>
+        <div class="profile-lead">
+          <p class="eyebrow" data-i18n="profile.kicker">Biographie / Paris</p>
+          <h1 id="profile-title" data-i18n="profile.heading">Un regard construit entre image, matière et expérience.</h1>
+          <p data-i18n="profile.lead">
+            Je construis mon parcours autour d'une même recherche : donner à une
+            image, un objet ou un espace une présence juste. Ce qui m'intéresse,
+            ce n'est pas seulement ce qui se voit, mais la sensation que cela
+            laisse : une ligne, une texture, un silence, une façon d'accueillir
+            le regard.
+          </p>
+        </div>
+      </section>
+
+      <figure class="profile-portrait">
+        <img
+          src="assets/profile/portrait-gaspard-levchin.jpeg"
+          alt="Portrait en noir et blanc de Gaspard Levchin"
+          loading="eager"
+          data-i18n-alt="profile.alt.portrait"
+        />
+      </figure>
+
+      <section class="profile-text-grid" aria-labelledby="profile-vision-title">
+        <div class="section-label">
+          <span>02</span>
+          <p data-i18n="profile.vision.label">Regard</p>
+        </div>
+        <div class="profile-text-columns">
+          <article>
+            <p class="eyebrow" data-i18n="profile.block.origin.kicker">Origine du regard</p>
+            <h2 id="profile-vision-title" data-i18n="profile.block.origin.title">Observer avant de produire.</h2>
+            <p data-i18n="profile.block.origin.body">
+              Mon rapport à l'image vient d'une attention instinctive aux formes,
+              aux visages, aux silhouettes et aux espaces. J'aime comprendre
+              pourquoi une scène fonctionne, pourquoi une matière attire, pourquoi
+              une composition semble évidente alors qu'elle est très construite.
+            </p>
+          </article>
+          <article>
+            <p class="eyebrow" data-i18n="profile.block.interests.kicker">Ce qui m'intéresse</p>
+            <h2 data-i18n="profile.block.interests.title">La précision sans froideur.</h2>
+            <p data-i18n="profile.block.interests.body">
+              Je suis attiré par les univers où le détail compte : le retail haut
+              de gamme, l'architecture, la photographie, les objets, la mode et la
+              manière dont une expérience peut devenir plus forte quand elle est
+              tenue avec exigence.
+            </p>
+          </article>
+          <article>
+            <p class="eyebrow" data-i18n="profile.block.build.kicker">Ce que je construis</p>
+            <h2 data-i18n="profile.block.build.title">Un langage qui relie design et mode.</h2>
+            <p data-i18n="profile.block.build.body">
+              LEVCHIN naît de cette envie de relier les disciplines : penser une
+              maison, une image, une pièce, un espace et une présence digitale
+              comme les éléments d'un même territoire visuel.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="profile-closing" aria-labelledby="profile-closing-title">
+        <p class="eyebrow" data-i18n="profile.closing.kicker">Vision</p>
+        <h2 id="profile-closing-title" data-i18n="profile.closing.title">Chercher une forme juste, pas seulement une belle image.</h2>
+        <p data-i18n="profile.closing.body">
+          Mon travail avance entre intuition et méthode. Je cherche des images
+          qui gardent une part de silence, des objets qui semblent nécessaires,
+          et des expériences qui restent en tête parce qu'elles ont été pensées
+          avec cohérence.
+        </p>
+        <a class="detail-link" href="index.html#signature" data-i18n="profile.back">Retour au portfolio</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="language-switcher" data-language-switcher aria-label="Sélecteur de langue" data-i18n-aria-label="aria.language">
+        <span data-i18n="language.label">Langue :</span>
+        <button type="button" data-language-option="fr" class="is-active" aria-pressed="true">Français</button>
+        <button type="button" data-language-option="en" aria-pressed="false">English</button>
+      </div>
+    </footer>
+
+    <script src="script.js?v=project-detail-12"></script>
+  </body>
+</html>

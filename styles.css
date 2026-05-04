@@ -396,6 +396,10 @@ h1 {
   line-height: 1.9;
 }
 
+.intro-actions {
+  margin-top: 34px;
+}
+
 .territory-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1700,6 +1704,156 @@ h1 {
   margin-bottom: clamp(54px, 7vw, 96px);
 }
 
+body.profile-bio {
+  --project-bg: #fff;
+  --project-muted: rgba(5, 5, 5, 0.64);
+  color: #050505;
+  background: #fff;
+}
+
+body.profile-bio::before {
+  display: none;
+}
+
+body.profile-bio .site-header.is-scrolled {
+  background-color: rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+body.profile-bio .brand-name,
+body.profile-bio .site-nav a {
+  color: rgba(5, 5, 5, 0.72);
+}
+
+body.profile-bio .site-footer {
+  margin-top: 0;
+  background: #fff;
+}
+
+body.profile-bio .language-switcher {
+  color: rgba(5, 5, 5, 0.58);
+}
+
+body.profile-bio .language-switcher span {
+  color: rgba(5, 5, 5, 0.42);
+}
+
+body.profile-bio .language-switcher button:hover,
+body.profile-bio .language-switcher button:focus-visible,
+body.profile-bio .language-switcher button.is-active {
+  color: #050505;
+}
+
+.profile-page {
+  min-height: 100vh;
+  padding: 150px var(--edge) 118px;
+  color: #050505;
+  background: #fff;
+}
+
+.profile-intro,
+.profile-text-grid {
+  display: grid;
+  grid-template-columns: var(--label-col) minmax(0, 1fr);
+  gap: clamp(36px, 8vw, 128px);
+  align-items: start;
+}
+
+.profile-page .section-label {
+  color: rgba(5, 5, 5, 0.5);
+}
+
+.profile-page .section-label span,
+.profile-page .eyebrow {
+  color: #050505;
+}
+
+.profile-lead h1 {
+  max-width: 12ch;
+  margin: 0 0 clamp(28px, 4vw, 54px);
+  color: #050505;
+  font-size: clamp(3.35rem, 7vw, 8rem);
+  font-weight: 300;
+  line-height: 0.96;
+}
+
+.profile-lead p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 0;
+  color: rgba(5, 5, 5, 0.68);
+  font-size: clamp(1rem, 1.18vw, 1.18rem);
+  line-height: 1.9;
+}
+
+.profile-portrait {
+  margin: clamp(70px, 10vw, 150px) 0 clamp(84px, 12vw, 168px);
+}
+
+.profile-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.profile-text-grid {
+  padding-top: clamp(38px, 5vw, 72px);
+  border-top: 1px solid rgba(5, 5, 5, 0.14);
+}
+
+.profile-text-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(28px, 5vw, 80px);
+}
+
+.profile-text-columns article {
+  padding-top: 28px;
+  border-top: 1px solid rgba(5, 5, 5, 0.18);
+}
+
+.profile-text-columns h2 {
+  max-width: 18ch;
+  margin: 20px 0 22px;
+  color: #050505;
+  font-size: clamp(1.55rem, 2.2vw, 2.45rem);
+  font-weight: 300;
+  line-height: 1.08;
+}
+
+.profile-text-columns p:not(.eyebrow),
+.profile-closing p:not(.eyebrow) {
+  margin: 0;
+  color: rgba(5, 5, 5, 0.68);
+  font-size: clamp(0.96rem, 1.03vw, 1.06rem);
+  line-height: 1.88;
+}
+
+.profile-closing {
+  width: min(1020px, 100%);
+  margin: clamp(90px, 13vw, 174px) 0 0 clamp(156px, 21vw, 338px);
+  padding-top: clamp(34px, 5vw, 64px);
+  border-top: 1px solid rgba(5, 5, 5, 0.14);
+}
+
+.profile-closing h2 {
+  max-width: 15ch;
+  margin: 20px 0 28px;
+  color: #050505;
+  font-size: clamp(2.7rem, 5.4vw, 6.6rem);
+  font-weight: 300;
+  line-height: 0.98;
+}
+
+.profile-closing p:not(.eyebrow) {
+  max-width: 730px;
+  margin-bottom: 42px;
+}
+
+.profile-closing .detail-link {
+  color: #050505;
+}
+
 .contact-links a:hover,
 .contact-links a:focus-visible {
   color: #fff8ef;
@@ -1792,6 +1946,19 @@ h1 {
   .riothouse-method-grid,
   .riothouse-image-grid {
     grid-template-columns: 1fr;
+  }
+
+  .profile-intro,
+  .profile-text-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-text-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-closing {
+    margin-left: 0;
   }
 }
 
@@ -2159,9 +2326,19 @@ body[data-theme="light"] .project-featured img {
   .intro-copy h2,
   .section-head h2,
   .craft-grid h2,
-  .contact-section h2 {
+  .contact-section h2,
+  .profile-lead h1,
+  .profile-closing h2 {
     max-width: 100%;
     font-size: clamp(2.1rem, 12vw, 3.45rem);
+  }
+
+  .profile-page {
+    padding: 146px 20px 88px;
+  }
+
+  .profile-portrait {
+    margin: 58px 0 72px;
   }
 
   .territory {
