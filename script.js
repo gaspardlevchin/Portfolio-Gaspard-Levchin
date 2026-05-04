@@ -323,7 +323,7 @@ const translations = {
     "project.riothouse.video.body2": "This reference completes the set images: it shows the final result of a chain where preparation, image direction, editing and client validation work together.",
     "project.riothouse.carousel.title": "Studio, set, post-production",
     "project.riothouse.closing.kicker": "Takeaway",
-    "project.riothouse.closing.title": "From set to workflow.",
+    "project.riothouse.closing.title": "From set<br />to workflow.",
     "project.riothouse.closing.body1": "This internship confirmed my interest in production-based audiovisual work: teamwork, preparation, set discipline and the precision required in post-production.",
     "project.riothouse.closing.body2": "It also gave me concrete reference points for project organization: rushes, media, sound, exports, continuity between hard drive and software, and the importance of a clean workflow when reopening or revising a video.",
     "project.riothouse.alt.building": "RiotHouse Production building in Châteaugay",

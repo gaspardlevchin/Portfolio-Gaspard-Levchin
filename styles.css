@@ -872,7 +872,7 @@ h1 {
 
 .project-riothouse {
   --project-accent: #151515;
-  --project-glow: rgba(208, 74, 124, 0.16);
+  --project-glow: rgba(8, 8, 8, 0.08);
   --project-bg: #f4f0ea;
   --project-surface: rgba(16, 16, 16, 0.045);
   --project-text: #080808;
@@ -893,10 +893,9 @@ h1 {
 .project-riothouse.project-page,
 .project-riothouse.project-story {
   background:
-    radial-gradient(circle at 84% 8%, rgba(208, 74, 124, 0.16), transparent 28%),
-    radial-gradient(circle at 18% 20%, rgba(23, 23, 23, 0.08), transparent 30%),
-    radial-gradient(circle at 74% 78%, rgba(111, 119, 132, 0.12), transparent 34%),
-    linear-gradient(180deg, #fbf8f3 0%, var(--project-bg) 42%, #eee8de 100%);
+    radial-gradient(circle at 82% 9%, rgba(8, 8, 8, 0.035), transparent 26%),
+    radial-gradient(circle at 16% 22%, rgba(8, 8, 8, 0.045), transparent 28%),
+    #f4f0ea;
 }
 
 .project-riothouse + .site-footer {
@@ -1557,8 +1556,7 @@ h1 {
 
 .riothouse-visual-hero::after {
   background:
-    radial-gradient(circle at 18% 0%, rgba(208, 74, 124, 0.14), transparent 38%),
-    linear-gradient(180deg, transparent 64%, rgba(244, 240, 234, 0.3));
+    radial-gradient(circle at 18% 0%, rgba(8, 8, 8, 0.055), transparent 38%);
 }
 
 .riothouse-logo-lockup {
@@ -1689,8 +1687,8 @@ h1 {
 .riothouse-video {
   min-height: clamp(420px, 54vw, 820px);
   background:
-    radial-gradient(circle at 16% 0%, rgba(208, 74, 124, 0.14), transparent 45%),
-    radial-gradient(circle at 82% 92%, rgba(79, 110, 150, 0.12), transparent 36%),
+    radial-gradient(circle at 16% 0%, rgba(8, 8, 8, 0.07), transparent 45%),
+    radial-gradient(circle at 82% 92%, rgba(8, 8, 8, 0.04), transparent 36%),
     rgba(8, 8, 8, 0.04);
 }
 
