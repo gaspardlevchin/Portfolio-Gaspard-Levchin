@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=project-detail-12" />
+    <link rel="stylesheet" href="styles.css?v=project-detail-13" />
   </head>
   <body class="project-fixed-theme profile-bio">
     <header class="site-header">
@@ -35,80 +35,73 @@
     </header>
 
     <main class="profile-page">
-      <section class="profile-intro" aria-labelledby="profile-title">
+      <section class="profile-hero" aria-labelledby="profile-title">
         <div class="section-label">
           <span>01</span>
           <p data-i18n="profile.label">Profil</p>
         </div>
-        <div class="profile-lead">
-          <p class="eyebrow" data-i18n="profile.kicker">Biographie / Paris</p>
-          <h1 id="profile-title" data-i18n="profile.heading">Un regard construit entre image, matière et expérience.</h1>
-          <p data-i18n="profile.lead">
-            Je construis mon parcours autour d'une même recherche : donner à une
-            image, un objet ou un espace une présence juste. Ce qui m'intéresse,
-            ce n'est pas seulement ce qui se voit, mais la sensation que cela
-            laisse : une ligne, une texture, un silence, une façon d'accueillir
-            le regard.
-          </p>
+        <div class="profile-hero-content">
+          <div class="profile-lead">
+            <p class="eyebrow" data-i18n="profile.kicker">Biographie / Paris</p>
+            <h1 id="profile-title" data-i18n="profile.heading">Regarder longtemps avant de dessiner une forme.</h1>
+            <p data-i18n="profile.lead">
+              Je ne viens pas à l'image par envie de remplir l'espace. J'y viens
+              parce que certaines formes, certaines matières et certaines
+              présences me donnent envie de comprendre ce qu'elles racontent
+              sans parler.
+            </p>
+          </div>
+          <figure class="profile-portrait">
+            <img
+              src="assets/profile/portrait-gaspard-levchin.jpeg"
+              alt="Portrait en noir et blanc de Gaspard Levchin"
+              loading="eager"
+              data-i18n-alt="profile.alt.portrait"
+            />
+          </figure>
         </div>
       </section>
 
-      <figure class="profile-portrait">
-        <img
-          src="assets/profile/portrait-gaspard-levchin.jpeg"
-          alt="Portrait en noir et blanc de Gaspard Levchin"
-          loading="eager"
-          data-i18n-alt="profile.alt.portrait"
-        />
-      </figure>
-
-      <section class="profile-text-grid" aria-labelledby="profile-vision-title">
+      <section class="profile-narrative" aria-labelledby="profile-vision-title">
         <div class="section-label">
           <span>02</span>
-          <p data-i18n="profile.vision.label">Regard</p>
+          <p data-i18n="profile.vision.label">Texte</p>
         </div>
-        <div class="profile-text-columns">
-          <article>
-            <p class="eyebrow" data-i18n="profile.block.origin.kicker">Origine du regard</p>
-            <h2 id="profile-vision-title" data-i18n="profile.block.origin.title">Observer avant de produire.</h2>
+        <div class="profile-text-stack">
+          <article class="profile-text-block">
+            <h2 id="profile-vision-title" data-i18n="profile.block.origin.title">Ce qui me touche d'abord, c'est une présence.</h2>
             <p data-i18n="profile.block.origin.body">
-              Mon rapport à l'image vient d'une attention instinctive aux formes,
-              aux visages, aux silhouettes et aux espaces. J'aime comprendre
-              pourquoi une scène fonctionne, pourquoi une matière attire, pourquoi
-              une composition semble évidente alors qu'elle est très construite.
+              J'ai toujours été attiré par les choses qui n'ont pas besoin d'être
+              bruyantes pour exister. Une silhouette simple, un objet bien posé,
+              une lumière qui tombe au bon endroit, une matière qui garde la trace
+              de la main. Je crois que mon regard s'est construit là : dans cette
+              envie de reconnaître ce qui est juste avant de chercher ce qui est
+              spectaculaire.
             </p>
           </article>
-          <article>
-            <p class="eyebrow" data-i18n="profile.block.interests.kicker">Ce qui m'intéresse</p>
-            <h2 data-i18n="profile.block.interests.title">La précision sans froideur.</h2>
+          <article class="profile-text-block">
+            <h2 data-i18n="profile.block.interests.title">Je cherche une précision qui reste humaine.</h2>
             <p data-i18n="profile.block.interests.body">
-              Je suis attiré par les univers où le détail compte : le retail haut
-              de gamme, l'architecture, la photographie, les objets, la mode et la
-              manière dont une expérience peut devenir plus forte quand elle est
-              tenue avec exigence.
+              Le retail, l'image, le design et la mode m'intéressent parce qu'ils
+              parlent directement au corps. On y touche, on y circule, on y regarde
+              quelqu'un choisir, hésiter, se projeter. Ce qui me plaît, c'est de
+              tenir ensemble l'exigence et la sensation : une direction claire,
+              mais jamais froide ; une esthétique précise, mais encore vivante.
             </p>
           </article>
-          <article>
-            <p class="eyebrow" data-i18n="profile.block.build.kicker">Ce que je construis</p>
-            <h2 data-i18n="profile.block.build.title">Un langage qui relie design et mode.</h2>
+          <article class="profile-text-block">
+            <h2 data-i18n="profile.block.build.title">LEVCHIN est une manière de rassembler ce que je regarde.</h2>
             <p data-i18n="profile.block.build.body">
-              LEVCHIN naît de cette envie de relier les disciplines : penser une
-              maison, une image, une pièce, un espace et une présence digitale
-              comme les éléments d'un même territoire visuel.
+              Je construis peu à peu une maison de design et de mode parce que
+              j'ai besoin d'un territoire où l'image, l'objet, le vêtement, la
+              matière et l'expérience ne soient pas séparés. Pour moi, créer ce
+              n'est pas seulement produire quelque chose de beau. C'est donner une
+              cohérence à une intuition, jusqu'à ce qu'elle puisse être habitée.
             </p>
           </article>
         </div>
       </section>
-
-      <section class="profile-closing" aria-labelledby="profile-closing-title">
-        <p class="eyebrow" data-i18n="profile.closing.kicker">Vision</p>
-        <h2 id="profile-closing-title" data-i18n="profile.closing.title">Chercher une forme juste, pas seulement une belle image.</h2>
-        <p data-i18n="profile.closing.body">
-          Mon travail avance entre intuition et méthode. Je cherche des images
-          qui gardent une part de silence, des objets qui semblent nécessaires,
-          et des expériences qui restent en tête parce qu'elles ont été pensées
-          avec cohérence.
-        </p>
+      <section class="profile-return" aria-label="Retour">
         <a class="detail-link" href="index.html#signature" data-i18n="profile.back">Retour au portfolio</a>
       </section>
     </main>
@@ -121,6 +114,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=project-detail-12"></script>
+    <script src="script.js?v=project-detail-13"></script>
   </body>
 </html>
