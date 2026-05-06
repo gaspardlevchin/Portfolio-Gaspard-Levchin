@@ -103,7 +103,7 @@ const translations = {
     "profile.meta.description": "Biographical profile of Gaspard Levchin, shaped by image, design, fashion, material and experience.",
     "profile.label": "Profile",
     "profile.kicker": "Biography / Paris",
-    "profile.heading": "Building value from a way of seeing.",
+    "profile.heading": "Giving form to a point of view.",
     "profile.lead": "I do not come to image-making out of a need to fill space. I come to it because certain forms, materials and presences make me want to understand what they are saying without words.",
     "profile.vision.label": "Text",
     "profile.bio.one": "I was born into a family where we often had to build things ourselves. There was not always much money, but there was taste, objects, images, a way of looking. I grew up between resourcefulness and beautiful details, in a daily life that could be unstable, but never entirely without beauty.",
