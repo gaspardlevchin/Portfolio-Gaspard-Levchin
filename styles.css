@@ -13,6 +13,7 @@
   --section-content: minmax(0, 1fr);
   --label-col: minmax(120px, 0.28fr);
   --ease-smooth: cubic-bezier(0.19, 1, 0.22, 1);
+  --hover-text-weight: 0.018em 0 0 currentColor, -0.006em 0 0 currentColor;
 }
 
 * {
@@ -196,7 +197,7 @@ a {
 .site-nav a:focus-visible {
   color: #f4ebe1;
   outline: 0;
-  text-shadow: 0.018em 0 0 currentColor;
+  text-shadow: var(--hover-text-weight);
 }
 
 .hero {
@@ -476,7 +477,7 @@ h1 {
   font-size: 1rem;
   line-height: 1;
   transform: translate3d(0, 0.08em, 0);
-  transition: transform 420ms var(--ease-smooth);
+  transition: color 320ms var(--ease-smooth), transform 420ms var(--ease-smooth);
   will-change: transform;
 }
 
@@ -489,6 +490,7 @@ h1 {
 
 .project-row:hover::after,
 .project-row:focus-visible::after {
+  color: #fff8ef;
   transform: translate3d(5px, 0.08em, 0);
 }
 
@@ -520,7 +522,7 @@ h1 {
 
 .project-row:hover h3,
 .project-row:focus-visible h3 {
-  text-shadow: 0.012em 0 0 currentColor;
+  text-shadow: var(--hover-text-weight);
 }
 
 .project-row p:not(.project-kicker) {
@@ -773,7 +775,7 @@ h1 {
   font-size: 1rem;
   line-height: 1;
   transform: translate3d(0, 0.1em, 0);
-  transition: transform 420ms var(--ease-smooth);
+  transition: color 320ms var(--ease-smooth), transform 420ms var(--ease-smooth);
   will-change: transform;
 }
 
@@ -1982,7 +1984,7 @@ body.profile-bio .language-switcher button.is-active {
 .career-drawer summary:hover span,
 .career-drawer summary:focus-visible span {
   color: #050505;
-  text-shadow: 0.01em 0 0 currentColor;
+  text-shadow: var(--hover-text-weight);
 }
 
 .career-drawer p {
@@ -2012,12 +2014,13 @@ body.profile-bio .language-switcher button.is-active {
 .contact-links a:hover,
 .contact-links a:focus-visible {
   color: #fff8ef;
-  text-shadow: 0.012em 0 0 currentColor;
+  text-shadow: var(--hover-text-weight);
   transform: translate3d(10px, 0, 0);
 }
 
 .contact-links a:hover::after,
 .contact-links a:focus-visible::after {
+  color: #fff8ef;
   transform: translate3d(5px, 0.1em, 0);
 }
 
@@ -2195,6 +2198,13 @@ body[data-theme="light"] .site-nav a:hover,
 body[data-theme="light"] .site-nav a:focus-visible,
 body[data-theme="light"] .contact-links a:hover,
 body[data-theme="light"] .contact-links a:focus-visible {
+  color: #050505;
+}
+
+body[data-theme="light"] .project-row:hover::after,
+body[data-theme="light"] .project-row:focus-visible::after,
+body[data-theme="light"] .contact-links a:hover::after,
+body[data-theme="light"] .contact-links a:focus-visible::after {
   color: #050505;
 }
 
