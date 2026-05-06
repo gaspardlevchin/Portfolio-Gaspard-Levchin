@@ -188,14 +188,15 @@ a {
   font-size: 0.72rem;
   font-weight: 600;
   text-decoration: none;
-  transition: opacity 260ms var(--ease-smooth), transform 320ms var(--ease-smooth);
-  will-change: transform;
+  text-shadow: 0 0 0 transparent;
+  transition: color 280ms var(--ease-smooth), text-shadow 320ms var(--ease-smooth);
 }
 
 .site-nav a:hover,
 .site-nav a:focus-visible {
-  opacity: 0.62;
-  transform: translate3d(0, -1px, 0);
+  color: #f4ebe1;
+  outline: 0;
+  text-shadow: 0.018em 0 0 currentColor;
 }
 
 .hero {
@@ -467,19 +468,6 @@ h1 {
   z-index: 1;
 }
 
-.project-row::before {
-  content: "";
-  position: absolute;
-  inset: 0 calc(-1 * clamp(10px, 1.5vw, 24px));
-  z-index: 0;
-  background:
-    radial-gradient(circle at 0% 10%, rgba(208, 159, 104, 0.18), transparent 44%),
-    linear-gradient(90deg, rgba(208, 159, 104, 0.1), rgba(208, 159, 104, 0.035) 46%, transparent 82%);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 420ms var(--ease-smooth);
-}
-
 .project-row::after {
   content: "→";
   grid-column: 3;
@@ -497,11 +485,6 @@ h1 {
   color: #fff8ef;
   outline: 0;
   transform: translate3d(6px, 0, 0);
-}
-
-.project-row:hover::before,
-.project-row:focus-visible::before {
-  opacity: 1;
 }
 
 .project-row:hover::after,
@@ -531,6 +514,14 @@ h1 {
   font-size: clamp(1.36rem, 2.3vw, 2.55rem);
   font-weight: 300;
   line-height: 1.08;
+  text-shadow: 0 0 0 transparent;
+  transition: color 320ms var(--ease-smooth), font-weight 320ms var(--ease-smooth), text-shadow 320ms var(--ease-smooth);
+}
+
+.project-row:hover h3,
+.project-row:focus-visible h3 {
+  font-weight: 400;
+  text-shadow: 0.012em 0 0 currentColor;
 }
 
 .project-row p:not(.project-kicker) {
@@ -769,7 +760,8 @@ h1 {
   font-size: clamp(1rem, 2vw, 1.7rem);
   font-weight: 300;
   text-decoration: none;
-  transition: color 320ms var(--ease-smooth), transform 420ms var(--ease-smooth);
+  text-shadow: 0 0 0 transparent;
+  transition: color 320ms var(--ease-smooth), text-shadow 320ms var(--ease-smooth), transform 420ms var(--ease-smooth);
   will-change: transform;
 }
 
@@ -959,6 +951,11 @@ h1 {
 .project-fixed-theme .brand-name,
 .project-fixed-theme .site-nav a {
   color: var(--project-muted);
+}
+
+.project-fixed-theme .site-nav a:hover,
+.project-fixed-theme .site-nav a:focus-visible {
+  color: var(--project-text);
 }
 
 .project-fixed-theme .site-header.is-scrolled {
@@ -1772,6 +1769,11 @@ body.profile-bio .site-nav a {
   color: rgba(5, 5, 5, 0.72);
 }
 
+body.profile-bio .site-nav a:hover,
+body.profile-bio .site-nav a:focus-visible {
+  color: #050505;
+}
+
 body.profile-bio .site-footer {
   margin-top: 0;
   background: #ffffff;
@@ -1946,7 +1948,7 @@ body.profile-bio .language-switcher button.is-active {
 
 .career-drawer summary:hover,
 .career-drawer summary:focus-visible {
-  color: rgba(5, 5, 5, 0.66);
+  color: #050505;
   outline: 0;
   transform: translate3d(6px, 0, 0);
 }
@@ -1974,6 +1976,15 @@ body.profile-bio .language-switcher button.is-active {
   font-size: clamp(1rem, 1.2vw, 1.2rem);
   font-weight: 500;
   line-height: 1.35;
+  text-shadow: 0 0 0 transparent;
+  transition: color 320ms var(--ease-smooth), font-weight 320ms var(--ease-smooth), text-shadow 320ms var(--ease-smooth);
+}
+
+.career-drawer summary:hover span,
+.career-drawer summary:focus-visible span {
+  color: #050505;
+  font-weight: 600;
+  text-shadow: 0.01em 0 0 currentColor;
 }
 
 .career-drawer p {
@@ -2003,6 +2014,7 @@ body.profile-bio .language-switcher button.is-active {
 .contact-links a:hover,
 .contact-links a:focus-visible {
   color: #fff8ef;
+  text-shadow: 0.012em 0 0 currentColor;
   transform: translate3d(10px, 0, 0);
 }
 
@@ -2179,6 +2191,13 @@ body[data-theme="light"] .project-row time,
 body[data-theme="light"] .timeline p,
 body[data-theme="light"] .contact-links a {
   color: rgba(5, 5, 5, 0.72);
+}
+
+body[data-theme="light"] .site-nav a:hover,
+body[data-theme="light"] .site-nav a:focus-visible,
+body[data-theme="light"] .contact-links a:hover,
+body[data-theme="light"] .contact-links a:focus-visible {
+  color: #050505;
 }
 
 body[data-theme="light"] .theme-toggle:hover,
