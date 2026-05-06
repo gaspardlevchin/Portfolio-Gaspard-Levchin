@@ -102,7 +102,7 @@ const translations = {
     "profile.meta.description": "Biographical profile of Gaspard Levchin, shaped by image, design, fashion, material and experience.",
     "profile.label": "Profile",
     "profile.kicker": "Biography",
-    "profile.heading": "Giving form to a point of view.",
+    "profile.heading": "Giving form to a point of view",
     "profile.career.kicker": "Dates & experience",
     "profile.tools.kicker": "Culture & tools",
     "profile.tools.visual": "Visual culture",
