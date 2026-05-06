@@ -746,6 +746,14 @@ h1 {
   max-width: 15ch;
 }
 
+.contact-intro {
+  max-width: 620px;
+  margin: -4px 0 clamp(34px, 4vw, 56px);
+  color: rgba(239, 230, 221, 0.66);
+  font-size: clamp(0.96rem, 1.05vw, 1.12rem);
+  line-height: 1.8;
+}
+
 .contact-links {
   display: grid;
   width: min(980px, 100%);
@@ -2210,6 +2218,7 @@ body[data-theme="light"] .section-label,
 body[data-theme="light"] .project-kicker,
 body[data-theme="light"] .project-row time,
 body[data-theme="light"] .timeline p,
+body[data-theme="light"] .contact-intro,
 body[data-theme="light"] .contact-links a {
   color: rgba(5, 5, 5, 0.72);
 }
