@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=project-detail-17" />
+    <link rel="stylesheet" href="styles.css?v=project-detail-18" />
   </head>
   <body>
     <header class="site-header">
@@ -32,7 +32,7 @@
       <nav class="site-nav" aria-label="Navigation principale" data-i18n-aria-label="aria.mainNav">
         <a href="#signature" data-i18n="nav.profile">Profil</a>
         <a href="#projets" data-i18n="nav.project">Projet</a>
-        <a href="#parcours" data-i18n="nav.experience">Parcours</a>
+        <a href="profil.html#parcours" data-i18n="nav.experience">Parcours</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Changer le thème" data-theme-toggle data-i18n-aria-label="aria.theme">
@@ -129,8 +129,7 @@
 
         <div class="project-list">
           <article class="project-row project-featured">
-            <div class="project-index">01</div>
-            <div>
+            <div class="project-copy">
               <p class="project-kicker" data-i18n="home.project.levchin.kicker">Création d'entreprise / Paris</p>
               <h3 data-i18n="home.project.levchin.title">LEVCHIN, maison de design & mode</h3>
               <p data-i18n="home.project.levchin.body">
@@ -139,23 +138,16 @@
                 la présence digitale et la recherche de pièces à la croisée du
                 design, de la mode et de l'objet.
               </p>
-              <div class="project-actions">
-                <div class="project-notice-wrap">
-                  <button type="button" data-levchin-notice data-i18n="home.project.view">
-                    Voir le projet
-                  </button>
-                  <div class="site-toast" data-site-toast role="status" aria-live="polite" aria-hidden="true">
-                    <span data-i18n="home.levchin.notice">Le site arrive bientôt.</span>
-                  </div>
-                </div>
-              </div>
             </div>
             <img src="assets/levchin-logo.svg" alt="LEVCHIN" />
+            <button class="project-row-hit" type="button" data-levchin-notice aria-label="Voir le projet LEVCHIN" data-i18n-aria-label="home.project.levchin.action"></button>
+            <div class="site-toast" data-site-toast role="status" aria-live="polite" aria-hidden="true">
+              <span data-i18n="home.levchin.notice">Le site arrive bientôt.</span>
+            </div>
           </article>
 
-          <article class="project-row">
-            <div class="project-index">02</div>
-            <div>
+          <a class="project-row" href="projets/tvinted-dvrk.html">
+            <div class="project-copy">
               <p class="project-kicker" data-i18n="home.project.tvinted.kicker">Exposition photo / STAY ARTY</p>
               <h3>TVINTED DVRK</h3>
               <p data-i18n="home.project.tvinted.body">
@@ -163,16 +155,12 @@
                 nocturne, verticales froides, sélection d'œuvres, logique de
                 catalogue et supports de communication pensés autour de l'exposition.
               </p>
-              <div class="project-actions">
-                <a href="projets/tvinted-dvrk.html" data-i18n="home.project.detail">Détail projet</a>
-              </div>
             </div>
             <time data-i18n="home.date.tvinted">Mars / Avril 2024</time>
-          </article>
+          </a>
 
-          <article class="project-row">
-            <div class="project-index">03</div>
-            <div>
+          <a class="project-row" href="projets/arche-chateau.html">
+            <div class="project-copy">
               <p class="project-kicker" data-i18n="home.project.arche.kicker">Théâtre / Compagnie Les Larrons</p>
               <h3>L'Arche et le Château</h3>
               <p data-i18n="home.project.arche.body">
@@ -180,16 +168,12 @@
                 théâtral : corps, objets, gestes et fragments narratifs capables
                 de prolonger l'identité du spectacle.
               </p>
-              <div class="project-actions">
-                <a href="projets/arche-chateau.html" data-i18n="home.project.detail">Détail projet</a>
-              </div>
             </div>
             <time data-i18n="home.date.feb2024">Février 2024</time>
-          </article>
+          </a>
 
-          <article class="project-row">
-            <div class="project-index">04</div>
-            <div>
+          <a class="project-row" href="projets/des-fermes-un-quartier.html">
+            <div class="project-copy">
               <p class="project-kicker" data-i18n="home.project.packshot.kicker">Commerce de proximité / image produit</p>
               <h3>Des Fermes, Un Quartier</h3>
               <p data-i18n="home.project.packshot.body">
@@ -197,16 +181,12 @@
                 lisibilité produit, rayonnage, chaleur des matières et retouche
                 discrète pour des images commerciales utilisables.
               </p>
-              <div class="project-actions">
-                <a href="projets/des-fermes-un-quartier.html" data-i18n="home.project.detail">Détail projet</a>
-              </div>
             </div>
             <time data-i18n="home.date.mar2024">Mars 2024</time>
-          </article>
+          </a>
 
-          <article class="project-row">
-            <div class="project-index">05</div>
-            <div>
+          <a class="project-row" href="projets/diner-rcf.html">
+            <div class="project-copy">
               <p class="project-kicker" data-i18n="home.project.event.kicker">Événementiel institutionnel</p>
               <h3>Dîner du RCF</h3>
               <p data-i18n="home.project.event.body">
@@ -214,16 +194,12 @@
                 approche documentaire discrète : discours, groupes, atmosphère
                 de salle et échanges captés sans interrompre la soirée.
               </p>
-              <div class="project-actions">
-                <a href="projets/diner-rcf.html" data-i18n="home.project.detail">Détail projet</a>
-              </div>
             </div>
             <time data-i18n="home.date.oct2023">Octobre 2023</time>
-          </article>
+          </a>
 
-          <article class="project-row">
-            <div class="project-index">06</div>
-            <div>
+          <a class="project-row" href="projets/the-sausages.html">
+            <div class="project-copy">
               <p class="project-kicker" data-i18n="home.project.concert.kicker">Concert / Lyon</p>
               <h3>The Sausages</h3>
               <p data-i18n="home.project.concert.body">
@@ -231,16 +207,12 @@
                 instable, des gestes rapides et une énergie de scène à garder
                 sans perdre la structure de l'image.
               </p>
-              <div class="project-actions">
-                <a href="projets/the-sausages.html" data-i18n="home.project.detail">Détail projet</a>
-              </div>
             </div>
             <time data-i18n="home.date.jul2022">Juillet 2022</time>
-          </article>
+          </a>
 
-          <article class="project-row">
-            <div class="project-index">07</div>
-            <div>
+          <a class="project-row" href="projets/riothouse-production.html">
+            <div class="project-copy">
               <p class="project-kicker" data-i18n="home.project.riothouse.kicker">Stage / production audiovisuelle</p>
               <h3>RiotHouse Production</h3>
               <p data-i18n="home.project.riothouse.body">
@@ -249,16 +221,12 @@
                 workflow RED / DaVinci Resolve et découverte d'une production
                 publicitaire structurée.
               </p>
-              <div class="project-actions">
-                <a href="projets/riothouse-production.html" data-i18n="home.project.detail">Détail projet</a>
-              </div>
             </div>
             <time data-i18n="home.date.riothouse">Juillet — Août 2021</time>
-          </article>
+          </a>
 
-          <article class="project-row">
-            <div class="project-index">08</div>
-            <div>
+          <a class="project-row" href="projets/film-parfum-bts.html">
+            <div class="project-copy">
               <p class="project-kicker" data-i18n="home.project.perfume.kicker">Étude BTS / film publicitaire</p>
               <h3 data-i18n="home.project.perfume.title">Film parfum</h3>
               <p data-i18n="home.project.perfume.body">
@@ -267,75 +235,15 @@
                 exercice publicitaire avec contraintes de diffusion web et
                 télévision.
               </p>
-              <div class="project-actions">
-                <a href="projets/film-parfum-bts.html" data-i18n="home.project.detail">Détail projet</a>
-              </div>
             </div>
             <time data-i18n="home.date.study">Projet d'étude</time>
-          </article>
-        </div>
-      </section>
-
-      <section class="section timeline-section" id="parcours">
-        <div class="section-label">
-          <span>04</span>
-          <p data-i18n="home.experience.label">Parcours</p>
-        </div>
-        <div class="timeline">
-          <article>
-            <time data-i18n="home.time.april2024">Avril 2024 à aujourd’hui</time>
-            <h3 data-i18n="home.exp.levchin.title">Création d’Entreprise — Design & Mode</h3>
-            <p data-i18n="home.exp.levchin.body">
-              Développement de la maison LEVCHIN à Paris. Construction d'un
-              territoire de marque, recherche de direction artistique, écriture
-              d'un univers visuel et préparation d'une première présence digitale.
-            </p>
-          </article>
-          <article>
-            <time data-i18n="home.time.oct2022">Octobre 2022 à 2024</time>
-            <h3 data-i18n="home.exp.ideco.title">Vendeur Polyvalent — Ideco Store</h3>
-            <p data-i18n="home.exp.ideco.body">
-              Expérience retail à Paris 10e : relation client, conseil, tenue de
-              l'espace de vente, visual merchandising et gestion des stocks.
-              Développement d'un sens concret du service, du détail et du rythme
-              d'une boutique.
-            </p>
-          </article>
-          <article>
-            <time data-i18n="home.time.sept2023">Septembre 2023</time>
-            <h3 data-i18n="home.exp.commercial.title">Commercial — Quycup & Blogo</h3>
-            <p data-i18n="home.exp.commercial.body">
-              Mission commerciale sur Maison & Objet à Villepinte. Présentation
-              de produits, échange avec des visiteurs professionnels et lecture
-              rapide des besoins dans un contexte salon exigeant.
-            </p>
-          </article>
-          <article>
-            <time data-i18n="home.time.riothouse">Juillet — Août 2021</time>
-            <h3 data-i18n="home.exp.riothouse.title">Stagiaire Image / Postproduction — RiotHouse Production</h3>
-            <p data-i18n="home.exp.riothouse.body">
-              Stage BTS Audiovisuel option Image à Châteaugay, au sein d'une
-              société de production publicitaire et institutionnelle. Observation
-              active du plateau, du montage et du workflow image : organisation
-              des rushs, Premiere Pro, DaVinci Resolve, RED Helium 8K, lumière
-              ARRI et rig caméra.
-            </p>
-          </article>
-          <article>
-            <time data-i18n="home.time.2020">2020 à 2022</time>
-            <h3 data-i18n="home.exp.bts.title">BTS Audiovisuel — Spécialité Image</h3>
-            <p data-i18n="home.exp.bts.body">
-              Formation image à l'EFCAM, à Riom. Culture de cadre, lumière,
-              photographie, matériel caméra et postproduction. Base technique
-              solide pour construire des images avec méthode.
-            </p>
-          </article>
+          </a>
         </div>
       </section>
 
       <section class="section craft-section">
         <div class="section-label">
-          <span>05</span>
+          <span>04</span>
           <p data-i18n="home.tools.label">Outils</p>
         </div>
         <div class="craft-grid">
@@ -361,7 +269,7 @@
 
       <section class="section pdf-section" aria-labelledby="pdf-title">
         <div class="section-label">
-          <span>06</span>
+          <span>05</span>
           <p>PDF</p>
         </div>
         <div class="pdf-callout">
@@ -394,6 +302,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=project-detail-17"></script>
+    <script src="script.js?v=project-detail-18"></script>
   </body>
 </html>
