@@ -484,12 +484,12 @@ h1 {
 .project-row:focus-visible {
   color: #fff8ef;
   outline: 0;
-  transform: translate3d(6px, 0, 0);
+  transform: translate3d(10px, 0, 0);
 }
 
 .project-row:hover::after,
 .project-row:focus-visible::after {
-  transform: translate3d(6px, 0.08em, 0);
+  transform: translate3d(5px, 0.08em, 0);
 }
 
 .project-featured {
@@ -515,12 +515,11 @@ h1 {
   font-weight: 300;
   line-height: 1.08;
   text-shadow: 0 0 0 transparent;
-  transition: color 320ms var(--ease-smooth), font-weight 320ms var(--ease-smooth), text-shadow 320ms var(--ease-smooth);
+  transition: color 320ms var(--ease-smooth), text-shadow 320ms var(--ease-smooth);
 }
 
 .project-row:hover h3,
 .project-row:focus-visible h3 {
-  font-weight: 400;
   text-shadow: 0.012em 0 0 currentColor;
 }
 
@@ -1977,13 +1976,12 @@ body.profile-bio .language-switcher button.is-active {
   font-weight: 500;
   line-height: 1.35;
   text-shadow: 0 0 0 transparent;
-  transition: color 320ms var(--ease-smooth), font-weight 320ms var(--ease-smooth), text-shadow 320ms var(--ease-smooth);
+  transition: color 320ms var(--ease-smooth), text-shadow 320ms var(--ease-smooth);
 }
 
 .career-drawer summary:hover span,
 .career-drawer summary:focus-visible span {
   color: #050505;
-  font-weight: 600;
   text-shadow: 0.01em 0 0 currentColor;
 }
 
